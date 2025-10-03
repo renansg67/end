@@ -6,7 +6,7 @@ col1, col2, col3 = st.columns([1, 2, 1])
 
 col2.title("Ensaios não destrutivos para a caracterização de materiais de construção não metálicos")
 
-col2.header("Início", divider=True)
+col2.header("Início")
 
 col2.write("Quando se fala de materiais de construção não metálicos, pode-se fazer referência tanto às estruturas de concreto quanto às de madeira, que são amplamente utilizadas. O objetivo da utilização de ensaios não destrutivos para a caracterização desses materiais, como tem se apresentado nas últimas décadas com o avanço do conhecimento e das técnicas da área, é complementar e facilitar as análises, além de permitir maior escalabilidade quanto às condições de resistência e rigidez do material ensaiado. Além disso, esse método visa complementar a caracterização realizada por meio de ensaios destrutivos, podendo encurtar o caminho até a caracterização destrutiva, desde que as propriedades da peça ensaiada sejam conhecidas e existam estudos anteriores detalhados o suficiente para validar o ensaio não destrutivo aplicado com boa margem de confiança. Dependendo do tipo de estudo, é possível até dispensar métodos destrutivos, que exigem mais tempo para execução.")
 
@@ -119,7 +119,7 @@ col2.latex(r'''
 
 col2.markdown("chega-se às equações que relacionam $\\lambda=f(E,\\nu)$, $\\nu=f(\\mu,\\lambda)$ e $E=f(\\mu,\\lambda)$")
 
-col2.markdown("**Método da frequência de ressonância**")
+col2.markdown("<h5 id='metodo-da-frequencia-de-ressonancia'>Método da frequência de ressonância</h5>", unsafe_allow_html=True)
 
 col2.write("No concreto, este ensaio, como mencionado anteriormente, visa obter as propriedades de rigidez do material. Por meio dele, o corpo de prova é colocado sobre um sistema vibratório que pode estar apoiado em diferentes pontos do próprio corpo de prova. A partir disso, o objeto recebe um impacto externo e o sistema de medição do equipamento, conectado a um computador, realiza a análise de sinais com base no intervalo de frequências abrangido pela propagação e retorna o módulo de elasticidade dinâmico do corpo de prova.")
 
@@ -137,18 +137,25 @@ col2.markdown("em que $C$ é o fator de forma, associado ao tipo de prisma confo
 
 col2.write("Um corpo de prova possui várias frequências de vibração, ou seja, frequências que produzem vibrações de maior amplitude. A fundamental é caracterizada por ser a primeira frequência que gera uma amplitude de vibração destoante das anteriores, também chamada de frequência de ressonância do primeiro harmônico.Um corpo de prova possui várias frequências de vibração, ou seja, frequências que produzem vibrações de maior amplitude. A fundamental é caracterizada por ser a primeira frequência que gera uma amplitude de vibração destoante das anteriores, também chamada de frequência de ressonância do primeiro harmônico.")
 
-col2.markdown("**Método da propagação de pulso ultrassônico**")
+col2.markdown("<h5 id='metodo-da-propagacao-de-pulso-ultrassonico'>Método da propagação de pulso ultrassônico</h5>", unsafe_allow_html=True)
 
 col2.latex(r'''
     \begin{equation}
-        \begin{array}{rcl}
-            E_{\text{din}}&=&f(\rho,\nu,V)\\
-            V&=&\sqrt{\dfrac{E_{\text{din}}(1-\nu)}{\rho(1+\nu)(1-2\nu)}}
-        \end{array}
+            E_{\text{din}}=f(\rho,\nu,V)
     \end{equation}
 ''')
 
+col2.latex(r'''
+    \begin{equation}
+        V=\sqrt{\dfrac{E_{\text{din}}(1-\nu)}{\rho(1+\nu)(1-2\nu)}}
+    \end{equation}
+''')
+
+col1, col2, col3 = st.columns([1, 2, 1])
+
 col2.write("Módulo de elasticidade estático¹")
+
+col3.info("¹Tanto o módulo de elasticidade estático quanto a resistência à compressão podem ser obtidos de maneira experimental por meio do ensaio de propagação de ondas desde que o concreto ensaiado possua similaridade aqueles em que já foram obtidas as funções dependentes da velocidade do pulso ultrassônico")
 
 col2.latex(r'''
     \begin{equation}
@@ -164,13 +171,13 @@ col2.latex(r'''
     \end{equation}
 ''')
 
+col1, col2, col3 = st.columns([1, 2, 1])
+
 col2.write("Fatores que afetam a velocidade de propagação do pulso ultrassônico no concreto²")
 
-col2.info("¹Tanto o módulo de elasticidade estático quanto a resistência à compressão podem ser obtidos de maneira experimental por meio do ensaio de propagação de ondas desde que o concreto ensaiado possua similaridade aqueles em que já foram obtidas as funções dependentes da velocidade do pulso ultrassônico")
+col3.info("²Idade do concreto; massa específica do concreto; massa específica, tipo e características dos agregados; temperatura e umidade; efeito da armadura (teórico); efeito da armadura em estruturas reais; tipo de cimento; tipo de cura; tipo de adensamento; direção de ensaio")
 
-col2.info("²Idade do concreto; massa específica do concreto; massa específica, tipo e características dos agregados; temperatura e umidade; efeito da armadura (teórico); efeito da armadura em estruturas reais; tipo de cimento; tipo de cura; tipo de adensamento; direção de ensaio}")
-
-col2.markdown("**Ensaio de penetração de pinos**")
+col2.subheader("**Ensaio de penetração de pinos**")
 
 col2.write("Ensaio caracterizado por ser semidestrutivo, no qual se realiza o disparo de um pino com auxílio de um dispositivo carregado com pólvora. O disparo direciona o pino para dentro do corpo de prova ou da estrutura estudada e, com base na profundidade de penetração, estima-se a resistência do concreto à compressão.")
 
@@ -219,7 +226,7 @@ col2.write("Com isso em mente, a caracterização das propriedades de resistênc
 
 col2.subheader("**Métodos utilizando a frequência de ressonância**")
 
-col2.markdown("**Método de vibração transversal**")
+col2.markdown("<h5 id='metodo-da-vibracao-transversal'>Método de vibração transversal</h5>", unsafe_allow_html=True)
 
 col2.write("O método de vibração transversal consiste em submeter uma barra de madeira biapoiada nas extremidades a uma deflexão inicial e, em seguida, liberá-la para oscilar verticalmente. A partir dos sistema de medição utilizado, determina-se a frequência de ressonância fundamental e calcula-se o módulo de elasticidade (MOE) por meio da equação")
 
@@ -235,7 +242,7 @@ col2.write("a partir do aparato experimental abaixo")
 
 col2.image("./figuras/vibracao-transversal-livre.png")
 
-col2.markdown("**Método dos modos de vibração**")
+col2.markdown("<h5 id='metodo-dos-modos-de-vibracao'>Método dos modos de vibração</h5>", unsafe_allow_html=True)
 
 col2.write("O método relacionado aos modos de vibração consiste na análise de Fourier do gráfico de amplitude do sinal num intervalo de frequências. Existem três modos de vibração que normalmente são utilizados e dividem-se em: longitudinal, flexural e torsional. O ensaio envolvendo este método consiste em impactar uma barra de madeira em um das extremidades e, a partir de microfones condensadores localizados na extremidade oposto e com um circuito medidor adequado, obtêm-se o gráfico de ação combinada de deslocamentos flexurais e torsionais. Após a decomposição dos gráficos para cada modo específico de vibração, determinam-se as frequências de ressonância da amostra ensaiada. Com esta grandeza em mãos, torna-se possível calcular o módulo de elasticidade e de cisalhamento, ou módulo de elasticidade transversal, conforme as equações abaixo por meio do modo de vibração longitudinal")
 
@@ -261,7 +268,7 @@ col2.latex(r'''
     \end{equation}
 ''')
 
-col2.markdown("**Ensaio de flexão estática**")
+col2.subheader("**Ensaio de flexão estática**")
 
 col2.write("Quando falamos do método de flexão estática, podemos usar tanto o ensaio de 3 pontos quanto o de 4 pontos para a determinação do módulo de elasticidade, porém, com a reformulação da ABNT NBR 7190, para lotes de florestas plantadas não homogêneos, é possível utilizar a parte quatro da norma para determinação do módulo de elasticidade na flexão estática a partir da equação")
 
@@ -285,11 +292,13 @@ col2.write("seguindo o aparato experimental mostrado abaixo")
 
 col2.markdown("A premissa do ensaio é ser não destrutivo, por conta disso, a carga $\\Delta F$ aplicada é de $10\\%$ a $40\\%$ da máxima para ruptura da peça, e precisa ser estimada antes da realização do ensaio de flexão estática. Com a deflexão máxima $\\Delta e$ obtida por sensores de deslocamento, calcula-se o módulo de elasticidade $E_{0}$.")
 
-col2.markdown("**Método da propagação de ondas de tensão**")
+col2.markdown("<h5 id='metodo-da-propagacao-de-ondas-de-tensao'>Método da propagação de ondas de tensão</h5>", unsafe_allow_html=True)
 
 col2.markdown("Por fim, o método de propagação de ondas de tensão, envolve a propagação de ondas ultrassônicas por meio do impacto -- regime transiente -- ou por meio de transdutores que emitem feixes ultrassônicos com frequências acima da audível por humanos,  caracterizando o regime estacionário. Ambos os métodos podem ser utilizados em diferentes contextos de ensaios, como: Cronometragem do tempo de viagem do pulso acústico, pulso-eco e pitch and catch.")
 
 col2.markdown("**Barra viscoelástica submetida a um impacto**")
+
+col2.markdown("<h5 id='barra-viscoelastica-submetida-a-um-impacto'>Barra viscoelástica submetida a um impacto</h5>", unsafe_allow_html=True)
 
 col2.write("Para introduzir esses métodos, considere uma barra viscoelástica submetida a um impacto em uma das extremidades. Análogo ao que foi feito anteriormente para obtenção dos diferentes modos de vibração, a amostra é excitada repentinamente, num impacto de curta duração, produzindo, na extremidade impactada, uma onda de compressão/pressão que atravessa o material longitudinalmente até atingir a face da extremidade oposta, marcando o limite da interface madeira-ar. Devido à grande diferença de impedância acústica entre os dois meios, e considerando que o feixe acústico incide ortogonal à interface, a quase totalidade do feixe é refletida. Porém, a onda de compressão torna-se uma onda de tração, com a direção de vibração horizontal das partículas permanecendo inalterada, tendo em mente que a onda é longitudinal.")
 
@@ -305,7 +314,7 @@ col2.markdown("nela, um dos parâmetros de maior interesse é o coeficiente de a
 
 col2.write("Tal sequência de eventos é fundamental para o entendimento dos 3 ensaios citados anteriormente.")
 
-col2.markdown("**Cronometragem do tempo de propagação da onda de tensão**")
+col2.markdown("<h5 id='cronometragem-do-tempo-de-propagacao-de-ondas-de-tensao'>Cronometragem do tempo de propagação da onda de tensão</h5>", unsafe_allow_html=True)
 
 col2.write("No ensaio de cronometragem do tempo de viagem do pulso acústico, a extremidade impactada pode possuir tanto acelerômetros quanto transdutores dependendo do circuito utilizado para a medição. Fundamentalmente, esse tipo de ensaio requer que os sensores sejam posicionados nas extremidades da barra nas faces laterais, já que o impacto ocorre na seção transversal. Associados a um cronômetro, um acelerômetro é responsável por captar o sinal da onda de compressão e iniciar a contagem do cronômetro. O pulso, ao alcançar a extremidade oposta é detectado por outro acelerômetro que envia o sinal para o cronômetro pausar a contagem. A partir do tempo obtido e utilizando conceitos de cinemática do movimento retilíneo e uniforme, determina-se a velocidade de propagação conhecendo-se o comprimento da barra ensaiada")
 
@@ -315,7 +324,7 @@ col2.latex(r'''
     \end{equation}
 ''')
 
-col2.markdown("**Método do pulso-eco**")
+col2.markdown("<h5 id='metodo-do-pulso-eco'>Método do pulso-eco</h5>", unsafe_allow_html=True)
 
 col2.write("Quando se trata do método de pulso-eco, o aparato experimental consiste em utilizar um sensor, normalmente um transdutor, fixado na extremidade à que será impactada da barra. A onda de tensão de baixa frequência enviada através da barra alcança o sensor e a amplitude do sinal é medida em função do tempo. A distância entre dois pulsos mostrados na tela do osciloscópio estão relacionados ao tempo que o pulso demorou para viajar duas vezes o comprimento da barra, portanto, a relação da cinemática torna-se")
 
@@ -327,10 +336,10 @@ col2.latex(r'''
 
 col2.write("Neste método é interessante ressaltar que ao analisar a velocidade e aceleração das partículas em função do tempo, nota-se que a velocidade decai exponencialmente, enquanto que a aceleração permanece constante até que a propagação seja totalmente atenuada. Além disso o comportamento das curvas do sinal é distinto em cada caso. As partículas por estarem sujeita à vibração longitudinal causada pela onda de compressão, oscilam em torno de um ponto de equilíbrio. Se traçássemos um segmento vertical contendo este ponto, notaríamos que em metade do tempo a onda se move concordando com o sentido de propagação e, na outra metade, realiza um movimento que discorda do sentido positivo da propagação. Já com relação à aceleração das partículas, os pulsos ocupam somente o primeiro quadrante do gráfico, mostrando que a aceleração pode ser maior ou igual a zero, porém, sempre concorda com o sentido da onda de compressão.")
 
-col2.markdown("***Pitch and catch***")
+col2.markdown("<h5 id='pitch-and-catch'>Pitch and catch</h5>", unsafe_allow_html=True)
 
 col2.write("No método *pitch and catch* o aparato consiste na associação de transdutores, um de emissão e outro de recepção do sinal acústico, a um osciloscópio. Diferente dos métodos que envolvem impactar o espécime de forma abrupta, neste a emissão origina-se do sinal elétrico enviado pelo osciloscópio através dos cabos a ele conectados, transmissão para o transdutor emissor e conversão do sinal elétrico pelo transdutor em ondas mecânicas que atravessam o material. Os transdutores, dispostos nas faces laterais nos extremos da amostra longilínea, são responsáveis pela emissão e recepção do sinal. Neste ensaio, o transdutor receptor, capta o sinal e o osciloscópio mostra a amplitude da tensão em volts como função do tempo. Esse método também pode ser utilizado na obtenção das grandezas mostradas anteriormente.")
 
-col2.markdown("**Posicionamento dos acelerômetros**")
+col2.markdown("<h5 id='posicionamento-dos-acelerometros'>Posicionamento dos acelerômetros</h5>", unsafe_allow_html=True)
 
 col2.write("Durante os ensaios em barras de madeira, deve-se atentar quanto ao posicionamento dos acelerômetros na peça, tendo em vista que a intensidade do sinal depende diretamente do local em que eles se encontram ou quais faces eles são apoiados em relação à fonte de impacto.")
