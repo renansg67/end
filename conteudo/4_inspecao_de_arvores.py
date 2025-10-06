@@ -1,10 +1,10 @@
 import streamlit as st
 import pillow_avif
 
-st.title("Ensaios não destrutivos para inspeção de árvores urbanas")
-
 st.set_page_config(layout="wide")
 col1, col2, col3 = st.columns([1, 3, 1])
+
+col2.title("Ensaios não destrutivos para inspeção de árvores urbanas")
 
 col3.warning("""
 🌴 **I Congresso de Manejo e Conservação de Árvores Urbanas – Painel 3 (24/03)**  
