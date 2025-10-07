@@ -15,6 +15,12 @@ pages = {
     ],
     "Empréstimos": [
         st.Page("./emprestimos/emprestimos.py", title="Formulário", icon="ℹ️")
+    ],
+    "Equipamentos": [
+        st.Page("./equipamentos/equipamentos.py", title="Equipamentos", icon="🛠")
+    ],
+    "Biblioteca": [
+        st.Page("./biblioteca/biblioteca.py", title="Biblioteca", icon="📚")
     ]
 }
 

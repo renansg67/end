@@ -99,6 +99,17 @@ col2.write("Assim, a espada de ar se consolidou como uma ferramenta eficaz e de 
 
 col2.subheader("Tomografia")
 
+col1, col2, col3 = st.columns([1, 3, 1])
+
+col1.image(
+    "https://upload.wikimedia.org/wikipedia/commons/b/bc/Badanie_drzewa_tomografem_akustycznym.jpg",
+    caption=(
+        "Tomografia acústica em árvore — imagem de Tomasz Majchrzak, "
+        "disponível na Wikimedia Commons (CC BY-SA 4.0)."
+    )
+)
+
+
 col2.write("Tanto o alburno como o cerne fazem parte do xilema secundário. O caule aumenta muito mais de diâmetro na periferia. O raio parenquimático tende a sofrer dilatação na região do floema, devido ao maior crescimento da periferia. Ele está presente tanto no xilema quanto no floema. O floema secundário é formado por células condutoras como os elementos de tubo crivado e suas células companheiras, raio parenquimático e tecidos de sustentação, podendo ser fibras ou esclereides. Da mesma forma do que no floema, no câmbio temos as iniciais fusiformes e as radiais. As radiais produzem raio parenquimático para dentro e para fora em relação ao câmbio. Já as fusiformes produzem os elementos de tubo crivado e suas células companheiras e os elementos axiais como fibras e esclereides. Em coníferas o xilema normalmente é composto somente por traqueides e células de raio, raramente parênquima axial. No floema, há presença de células crivadas em sucessão. Devido ao rompimento que ocorre nas camadas de maior diâmetro na epiderme, o felogênio é responsável por produzir súber para fora e feloderme para dentro.")
 
 data = [
@@ -156,9 +167,17 @@ col2.write("Assim, o clinômetro permanece como uma ferramenta fundamental nas i
 
 col2.subheader("Hipsômetro")
 
+col1, col2, col3, col4 = st.columns([1, 2, 1, 1])
+
+col1.image('./figuras/arvore1.png')
+
+col4.image('./figuras/arvore2.png')
+
 col2.write("O hipsômetro é um equipamento destinado à estimativa da altura de árvores, funcionando como uma evolução do clinômetro ao incorporar escalas ou sistemas digitais que facilitam os cálculos. O princípio de funcionamento baseia-se na medição de ângulos de visada entre a horizontal e pontos específicos da árvore, como a base e o topo, associados à distância entre o observador e o tronco. A partir desses dados, aplica-se a relação trigonométrica da tangente, permitindo determinar a altura total ou parcial da árvore.")
 
 col2.write("Os hipsômetros podem ser analógicos, com escalas graduadas que permitem leitura direta da altura, ou digitais, que utilizam sensores ópticos e a inserção prévia da distância horizontal para fornecer o resultado automaticamente. Em modelos mais avançados, o próprio equipamento pode medir a distância até a árvore por meio de telemetria a laser, aumentando a precisão das estimativas.")
+
+col3.image("./figuras/arvore3.png")
 
 col2.write("Entre as principais aplicações do hipsômetro em inspeções arbóreas destacam-se:")
 
@@ -168,6 +187,8 @@ col2.markdown("""
     - apoio em análises de risco relacionadas à proximidade da copa com edificações e redes elétricas;
     - acompanhamento do crescimento de árvores em estudos de monitoramento florestal ou urbano.
 """)
+
+col1, col2, col3 = st.columns([1, 3, 1])
 
 col2.write("Apesar de suas vantagens, a utilização do hipsômetro requer atenção a alguns fatores que podem comprometer a precisão da medição, como a visibilidade do topo da árvore, a presença de copas densas que dificultem a definição do ponto de referência e a correta calibração do equipamento. Assim como no clinômetro, recomenda-se realizar as medições a partir de diferentes pontos de observação para reduzir incertezas.")
 
@@ -205,6 +226,10 @@ col2.write("O procedimento exige que a broca seja posicionada em ângulo ortogon
 
 col2.write("Assim, o trado de incremento constitui uma ferramenta valiosa para a caracterização do estado interno do tronco e para a obtenção de dados históricos de crescimento, sendo amplamente empregado em inspeções técnicas de árvores urbanas e em estudos de dendrocronologia.")
 
+col2.subheader("Ensaio de ancoragem ou estabilidade (*Tree pulling test*)")
+
+col2.subheader("Detecção de raiz")
+
 col2.subheader("Câmeras termográficas")
 
 col1, col2, col3 = st.columns([1, 3, 1])
@@ -223,8 +248,6 @@ col2.write("Uma das principais vantagens da termografia é o caráter totalmente
 col2.write("Apesar disso, a interpretação dos resultados requer cautela. A incidência solar, a temperatura ambiente, a umidade relativa do ar e até mesmo o vento podem influenciar o padrão térmico observado, gerando variações que não estão necessariamente associadas a defeitos internos. Assim, a experiência do avaliador e, em alguns casos, a associação com outros métodos — como a tomografia acústica ou o uso da espada de ar — tornam-se fundamentais para validar as informações obtidas.")
 
 col2.write("Portanto, as câmeras termográficas devem ser vistas como uma ferramenta de triagem poderosa e precisa, que, quando utilizada em conjunto com outros ensaios não destrutivos, amplia significativamente a confiabilidade do diagnóstico sobre a saúde e a estabilidade das árvores urbanas.")
-
-col2.subheader("Ensaio de ancoragem")
 
 col2.subheader("Laudo de inspeção")
 

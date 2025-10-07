@@ -18,7 +18,7 @@ Bem-vindo ao repositório interativo de materiais didáticos e informações sob
 - **Normas ABNT**: principais referências normativas aplicáveis.  
 """)
 
-col2.expander(":material/book: Sumário").markdown('''
+col2.expander(":material/book: Sumário", expanded=True).markdown('''
     ##### Materiais de construção não metálicos
     - [Início](materiais_nao_metalicos#inicio)
     - [Concreto](materiais_nao_metalicos#concreto)
@@ -95,28 +95,28 @@ col2.expander(":material/book: Sumário").markdown('''
 
     ##### Matriz de rigidez
 
-    - []()
-        - [Início]()
-        - [Materiais isotrópicos]()
-            - [Matriz de rigidez]()
-            - [Matriz de flexibilidade]()
-        - [Materiais isotrópicos transversais]()
-            - [Plano 12 de isotropia]()
-                - [Matriz de rigidez]()
-                - [Matriz de flexibilidade]()
-            - [Plano 13 de isotropia]()
-                - [Matriz de rigidez]()
-                - [Matriz de flexibilidade]()
-            - [Plano 23 de isotropia]()
-                - [Matriz de rigidez]()
-                - [Matriz de flexibilidade]()
-        - [Materiais ortotrópicos]()
-            - [Matriz de rigidez]()
-            - [Matriz de flexibilidade]()
-                - [Propagação nos planos]()
-                    - [Propagação de ondas no plano 12]()
-                    - [Propagação de ondas no plano 13]()
-                    - [Propagação de ondas no plano 23]()
+    - [Bases teóricas para obtenção da matriz de rigidez por método de propagação de ondas](matriz_de_rigidez#bases-teoricas-para-obtencao-da-matriz-de-rigidez-por-metodo-de-propagacao-de-ondas)
+        - [Início](matriz_de_rigidez#inicio)
+        - [Materiais isotrópicos](matriz_de_rigidez#materiais-isotropicos)
+            - [Matriz de rigidez](matriz_de_rigidez#materiais-isotropicos)
+            - [Matriz de flexibilidade](matriz_de_rigidez#materiais-isotropicos)
+        - [Materiais isotrópicos transversais](matriz_de_rigidez#materiais-isotropicos-transversais)
+            - [Plano 12 de isotropia](matriz_de_rigidez#plano-12-de-isotropia)
+                - [Matriz de rigidez](matriz_de_rigidez#materiais-isotropicos-transversais)
+                - [Matriz de flexibilidade](matriz_de_rigidez#materiais-isotropicos-transversais)
+            - [Plano 13 de isotropia](matriz_de_rigidez#plano-13-de-isotropia)
+                - [Matriz de rigidez](matriz_de_rigidez#plano-13-de-isotropia)
+                - [Matriz de flexibilidade](matriz_de_rigidez#plano-13-de-isotropia)
+            - [Plano 23 de isotropia](matriz_de_rigidez#plano-23-de-isotropia)
+                - [Matriz de rigidez](matriz_de_rigidez#plano-23-de-isotropia)
+                - [Matriz de flexibilidade](matriz_de_rigidez#plano-23-de-isotropia)
+        - [Materiais ortotrópicos](matriz_de_rigidez#materiais-ortotropicos)
+            - [Matriz de rigidez](matriz_de_rigidez#materiais-ortotropicos)
+            - [Matriz de flexibilidade](matriz_de_rigidez#materiais-ortotropicos)
+                - [Propagação nos planos](matriz_de_rigidez#propagacao-nos-planos)
+                    - [Propagação de ondas no plano 12](matriz_de_rigidez#propagacao-de-ondas-no-plano-12)
+                    - [Propagação de ondas no plano 13](matriz_de_rigidez#propagacao-de-ondas-no-plano-13)
+                    - [Propagação de ondas no plano 23](matriz_de_rigidez#propagacao-de-ondas-no-plano-23)
 
 
     ##### Propagação de ondas acústicas
