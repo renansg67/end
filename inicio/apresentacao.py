@@ -4,7 +4,7 @@ st.set_page_config(page_title="Materiais e Inspeções", layout="wide")
 
 col1, col2, col3 = st.columns([1, 3, 1])
 
-col2.title("📘 Ensaios Não Destrutivos (FEAGRI/LME)")
+col2.title("📘 Ensaios Não Destrutivos (FEAGRI/LabEND)")
 col2.markdown("""
 Bem-vindo ao repositório interativo de materiais didáticos e informações sobre
 **ensaios não destrutivos, inspeção de árvores e normas técnicas**.
