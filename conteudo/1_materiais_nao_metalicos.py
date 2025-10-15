@@ -2,7 +2,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Materiais e Inspeções", layout="wide")
 
-col1, col2, col3 = st.columns([1, 2, 1])
+col1, col2, col3 = st.columns([1, 3, 1])
 
 col2.title("Ensaios não destrutivos para a caracterização de materiais de construção não metálicos")
 
@@ -110,10 +110,13 @@ col2.write("considerando as seguintes condições:")
 
 col2.latex(r'''
     \begin{equation}
-        \begin{array}{rcl}
-            P&=&(2\mu+\lambda)\left(\dfrac{P}{E}\right)+\lambda\left(-\dfrac{2\nu P}{E}\right)\\ 
-            0&=&(2\mu+\lambda)\left(-\dfrac{\nu P}{E}\right)+\lambda\left(\dfrac{P}{E}-\dfrac{\nu P}{E}\right)
-        \end{array}
+        P=(2\mu+\lambda)\left(\dfrac{P}{E}\right)+\lambda\left(-\dfrac{2\nu P}{E}\right)
+    \end{equation}
+''')
+
+col2.latex(r'''
+    \begin{equation} 
+        0=(2\mu+\lambda)\left(-\dfrac{\nu P}{E}\right)+\lambda\left(\dfrac{P}{E}-\dfrac{\nu P}{E}\right)
     \end{equation}
 ''')
 

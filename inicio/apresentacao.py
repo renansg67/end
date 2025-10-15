@@ -1,10 +1,12 @@
 import streamlit as st
+from datetime import datetime
 
 st.set_page_config(page_title="Materiais e Inspeções", layout="wide")
 
 col1, col2, col3 = st.columns([1, 3, 1])
 
 col2.title("📘 Ensaios Não Destrutivos (FEAGRI/LabEND)")
+col2.header(f"*Olá {st.user.name.split(" ")[0]}!!*")
 col2.markdown("""
 Bem-vindo ao repositório interativo de materiais didáticos e informações sobre
 **ensaios não destrutivos, inspeção de árvores e normas técnicas**.
@@ -156,3 +158,23 @@ col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Atenuação na madeira](atenuacao_de_ondas_acusticas#atenuacao-na-madeira)
 
     ''')
+
+with col1.expander("Ultrassom para inspeção de árvores", expanded=True):
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Abstract_pattern_on_a_tree_stump.jpg/330px-Abstract_pattern_on_a_tree_stump.jpg")
+    st.button("Saiba mais", key="us")
+
+with col1.expander("Carbonatação como ensaio complementar a outros ENDs", expanded=True):
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Betonkorrosion_unter_Autobahnbruecke_%2802%29.JPG/330px-Betonkorrosion_unter_Autobahnbruecke_%2802%29.JPG")
+    st.button("Saiba mais", key="carbonatacao")
+
+with col1.expander("Termografia para inspeção de fachadas", expanded=True):
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Infrared_thermal_imaging_during_a_yacht_survey.jpg/500px-Infrared_thermal_imaging_during_a_yacht_survey.jpg")
+    st.button("Saiba mais", key="termografia")
+
+with col3.expander("Ensaio de flexão estática conforme ABNT NBR 7190", expanded=True):
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Stacked_Timber_Displaying_Growth_Rings.jpg/330px-Stacked_Timber_Displaying_Growth_Rings.jpg")
+    st.button("Saiba mais", key="flexao_estatica")
+
+with col3.expander("Livros e materiais para consulta", expanded=True):
+    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Christen_Dalsgaard_-_In_a_pine_wood._Study_-_Google_Art_Project.jpg/500px-Christen_Dalsgaard_-_In_a_pine_wood._Study_-_Google_Art_Project.jpg")
+    st.button("Saiba mais", key="livros")

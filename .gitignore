@@ -1,2 +1,8 @@
 __pycache__/
 *.py[cod]
+.streamlit/secrets.toml
+.streamlit/credentials.toml
+
+*.sqlite
+*.sqlite3
+*.db

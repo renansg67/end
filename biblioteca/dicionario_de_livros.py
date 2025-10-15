@@ -40,55 +40,55 @@ biblioteca = [
         "data_de_entrada": "2025-10-07"
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Manual de Projeto e Construção de Pontes de Madeira",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": None,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
-        "idioma": "",  # Idioma do livro (ex: Português, Inglês)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
+        "idioma": None,  # Idioma do livro (ex: Português, Inglês)
         "editora": "SET - EESC, USP",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Artigo",  # Livro, apostila, manual, tese, artigo
         "nivel": "Graduação",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-07"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Compuestos Biomassa Vegetal y Cemento",  # Título completo do livro
         "autor": "Antonio L. Beraldo",  # Nome(s) do(s) autor(es)
-        "ano": "2005",  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "ano": 2005,  # Ano de publicação (ex: 2025)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Espanhol",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Artigo",  # Livro, apostila, manual, tese, artigo
         "nivel": "Graduação",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-07"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Rigidez da madeira obtida a partir da avaliação acústica na árvore",  # Título completo do livro
         "autor": "Cinthya Bertoldo Pedroso",  # Nome(s) do(s) autor(es)
         "ano": 2014,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
-        "idioma": "",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
+        "idioma": None,  # Idioma do livro (ex: Português, Inglês)
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Propagação de ondas",
             "Velocidade na tora",
@@ -98,78 +98,78 @@ biblioteca = [
             "Coeficiente de Poisson"
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Tese",  # Livro, apostila, manual, tese, artigo
-        "nivel": "",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "nivel": None,  # Público-alvo (Graduação, Pós, Técnico)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-07"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Fundamentos de las propiedades físicas y mecánicas de las maderas",  # Título completo do livro
         "autor": "Eduardo O. Coronel",  # Nome(s) do(s) autor(es)
         "ano": 1994,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Espanhol",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Editorial El Liberal",  # Nome da editora
         "isbn": "9504360610",  # Código ISBN, se houver
         "palavras_chave": [],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Livro",  # Livro, apostila, manual, tese, artigo
         "nivel": "Pós",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-07"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "LA GESTIÓN Y EL APROVECHAMIENTO DE LOS RESIDUOS EN LA INDUSTRIA DE LA MADERA",  # Título completo do livro
         "autor": "Gregorio Antolín",  # Nome(s) do(s) autor(es)
         "ano": 2006,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Espanhol",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Instituto Nacional de Tecnologia Industrial Madera y Muebles",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Livro",  # Livro, apostila, manual, tese, artigo
         "nivel": "Pós",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-07"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Tecnologia para pré-dimensionamento de estrutura metálica",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 1998,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
         "editora": "AltoQI Tecnologia em Informação Ltda.",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Estrutura metálica"
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Apostila",  # Livro, apostila, manual, tese, artigo
         "nivel": "Graduação",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-07"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "L'isolation en ouate de cellulose",  # Título completo do livro
         "autor": [
             "Pascal Triboulot",
@@ -177,8 +177,8 @@ biblioteca = [
             "Jonathan Brilland"
         ],  # Nome(s) do(s) autor(es)
         "ano": 2010,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Francês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Lème Édition",  # Nome da editora
         "isbn": "9782361210175",  # Código ISBN, se houver
@@ -186,24 +186,24 @@ biblioteca = [
             "Cellulose"
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Livro",  # Livro, apostila, manual, tese, artigo
-        "nivel": "",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "nivel": None,  # Público-alvo (Graduação, Pós, Técnico)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Produtos Derivados da Madeira",  # Título completo do livro
         "autor": "Francisco Antonio Rocco Lahr",  # Nome(s) do(s) autor(es)
         "ano": 2008,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
         "editora": "EESC/USP",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Partículas de madeira - painéis",
             "Madeira - produtos derivados",
@@ -219,23 +219,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Nondestructive Evaluation of Wood",  # Título completo do livro
         "autor": [
             "Roy F. Pellerin",
             "Robert J. Ross"
         ],  # Nome(s) do(s) autor(es)
         "ano": 2002,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Forest Products Society",  # Nome da editora
         "isbn": "1892529262",  # Código ISBN, se houver
@@ -254,20 +254,20 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Maderas y Bosques Argentinos",  # Título completo do livro
         "autor": "Lucas A. Tortorelli",  # Nome(s) do(s) autor(es)
         "ano": 2009,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Espanhol",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Orientación Gráfica Editora",  # Nome da editora
         "isbn": "9789879260692",  # Código ISBN, se houver
@@ -277,15 +277,15 @@ biblioteca = [
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Livro",  # Livro, apostila, manual, tese, artigo
         "nivel": "Pós",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Unicamp no Projeto Rondon",  # Título completo do livro
         "autor": [
             "Amauri Aparecido Aguiar",
@@ -293,15 +293,15 @@ biblioteca = [
             "Lisandro Pavie Cardoso"
         ],  # Nome(s) do(s) autor(es)
         "ano": 2011,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
         "editora": [
             "Unicamp",
             "Pró-Reitoria de Extensão e Assuntos Comunitários",
             "Projeto Rondon"
         ],  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Projeto Rondon",
             "Unicamp no Rondon",
@@ -315,15 +315,15 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Materiais para construções rurais",  # Título completo do livro
         "autor": [
             "Antonio Ludovico Beraldo",
@@ -331,8 +331,8 @@ biblioteca = [
             "Wesley Jorge Freire"
         ],  # Nome(s) do(s) autor(es)
         "ano": 1991,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
         "editora": "LTC",  # Nome da editora
         "isbn": "8521607636",  # Código ISBN, se houver
@@ -350,23 +350,23 @@ biblioteca = [
             "Graduação", 
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "20th International Nondestructive Testing and Evaluation of Wood Symposium",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2017,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": [],  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Nondestructive Testing in the Urban Forest",
             "Nondestructive Assessment of Wood Quality",
@@ -378,23 +378,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "IV Simpósio Brasileiro de Tecnologia das Argamassas",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2003,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Engenharia Civil - Congressos",
             "Argamassas - Congressos",
@@ -404,20 +404,20 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Cerambycidae sul-americanos (Coleoptera)",  # Título completo do livro
         "autor": "Ubirajara R. Martins (Organizador)",  # Nome(s) do(s) autor(es)
         "ano": 2005,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Edusp",  # Nome da editora
         "isbn": "8531408857",  # Código ISBN, se houver
@@ -431,15 +431,15 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Estructuras de Madera",  # Título completo do livro
         "autor": [
             "Ramón Argüelles Álvarez",
@@ -449,8 +449,8 @@ biblioteca = [
             "Ramón Argüelles Bustillo"
         ],  # Nome(s) do(s) autor(es)
         "ano": 2013,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Espanhol",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Asociación de Investigación Técnica de las Industrias de la Madera (AITIM)",  # Nome da editora
         "isbn": "9788487381430",  # Código ISBN, se houver
@@ -466,23 +466,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Manual de Identificação das Principais Madeiras Comerciais Brasileiras",  # Título completo do livro
         "autor": "Calvino Mainieri",  # Nome(s) do(s) autor(es)
         "ano": 1983,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Companhia de Promoção de Pesquisa Científica e Tecnológica do Estado de São Paulo",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Identificação macroscópica de madeiras",
             "Classificação segundo a massa específica",
@@ -493,22 +493,22 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Wood and Timber Condition Assessment Manual",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2004,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
+        "editora": None,  # Nome da editora
         "isbn": "1892529394",  # Código ISBN, se houver
         "palavras_chave": [
             "Visual inspection",
@@ -525,20 +525,20 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "17th International Nondestructive Testing and Evaluation of Wood Symposium, Vol. 2",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2011,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": [],  # Nome da editora
         "isbn": "9789639883833",  # Código ISBN, se houver
@@ -552,23 +552,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Proceedings of the 16th International Symposium on Nondestructive Testing and Evaluation of Wood",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2009,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Nondestructive Detection of Decay",
             "Structural Defects in Standing Trees",
@@ -586,22 +586,22 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Proceedings of the 15th International Symposium on Nondestructive Testing of Wood",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2007,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
+        "editora": None,  # Nome da editora
         "isbn": "9781892529527",  # Código ISBN, se houver
         "palavras_chave": [
             "Standing Tree Decay Detection and Hazard Analysis",
@@ -619,40 +619,40 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
-        "titulo": "",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "id": None,  # Identificador único do livro (ex: L001)
+        "titulo": None,  # Título completo do livro
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": None,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
-        "idioma": "",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
+        "idioma": None,  # Idioma do livro (ex: Português, Inglês)
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
-        "tipo_de_material": "",  # Livro, apostila, manual, tese, artigo
-        "nivel": "",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
-        "data_de_entrada": ""  # Data que o livro foi catalogado (YYYY-MM-DD)
+        "tipo_de_material": None,  # Livro, apostila, manual, tese, artigo
+        "nivel": None,  # Público-alvo (Graduação, Pós, Técnico)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
+        "data_de_entrada": None  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Wisconsin's Champion Trees",  # Título completo do livro
         "autor": "R. Bruce Allison",  # Nome(s) do(s) autor(es)
         "ano": 2005,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Wisconsin Book Publishing",  # Nome da editora
         "isbn": "0913370185",  # Código ISBN, se houver
@@ -664,20 +664,20 @@ biblioteca = [
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Livro",  # Livro, apostila, manual, tese, artigo
         "nivel": "Graduação",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-08"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Acoustics of Wood",  # Título completo do livro
         "autor": "Voichita Bucur",  # Nome(s) do(s) autor(es)
         "ano": 1995,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "CRC Press",  # Nome da editora
         "isbn": "0849348013",  # Código ISBN, se houver
@@ -689,44 +689,44 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Madeira: Arquitetura e Engenharia",  # Título completo do livro
-        "autor": "",  # Nome(s) do(s) autor(es)
+        "autor": None,  # Nome(s) do(s) autor(es)
         "ano": 2010,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Projeto de Estruturas de Madeira",
             "7190/2010",
             "Métodos para Classificação e Caracterização de Materiais"
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Norma / Proposta de norma",  # Livro, apostila, manual, tese, artigo
-        "nivel": "",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "nivel": None,  # Público-alvo (Graduação, Pós, Técnico)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Applied finite element analysis",  # Título completo do livro
         "autor": "Larry J. Segerlind",  # Nome(s) do(s) autor(es)
         "ano": 1937,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "John Wiley & Sons",  # Nome da editora
         "isbn": "0471774405",  # Código ISBN, se houver
@@ -738,26 +738,26 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Influência da Anatomia e Química nas Propriedades da Madeira, CEPEF",  # Título completo do livro
         "autor": [
             "Ademir Castro e Silva",
             "Marcia B. Castro e Silva"
         ],  # Nome(s) do(s) autor(es)
         "ano": 1991,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Composição Química da Madeira",
             "Estrutura Celular",
@@ -770,20 +770,20 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Nondestructive Characterization an Imaging Wood",  # Título completo do livro
         "autor": "Voichita Bucur",  # Nome(s) do(s) autor(es)
         "ano": 2003,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Springer",  # Nome da editora
         "isbn": "3540438408",  # Código ISBN, se houver
@@ -796,20 +796,20 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Urban Forest Acoustics",  # Título completo do livro
         "autor": "Voichita Bucur",  # Nome(s) do(s) autor(es)
         "ano": 2006,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Springer",  # Nome da editora
         "isbn": "3540307834",  # Código ISBN, se houver
@@ -819,23 +819,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Le Séchage des Bois",  # Título completo do livro
         "autor": "Armand Ihne",  # Nome(s) do(s) autor(es)
         "ano": 1940,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Francês",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Dunod",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Technologie du bois",
             "Séchage du bois",
@@ -847,26 +847,26 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
         "resumo": "A secagem da madeira é um processo fundamental para reduzir seu teor de umidade, evitar a degradação e melhorar propriedades. Obras sobre o tema, como a de Armand Ihne, exploram a teoria e prática deste processo, abordando o controle de umidade, propriedades da madeira, métodos de secagem natural e artificial, e condicionamento para evitar tensões.",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Classificação de peças estruturais de madeira",  # Título completo do livro
         "autor": "Marcos Furiati",  # Nome(s) do(s) autor(es)
         "ano": 1981,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Classificação visual",
-            "Classificação estrutural"
+            "Classificação estrutural",
             "Orientação das fibras",
             "Número de nós",
             "Número de fendas",
@@ -878,38 +878,38 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "The Elasticity of Wood and Plywood",  # Título completo do livro
         "autor": "R. F. S. Hearmon",  # Nome(s) do(s) autor(es)
         "ano": 1948,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Inglês",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Livro",  # Livro, apostila, manual, tese, artigo
         "nivel": [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Espécies de Madeiras Substitutas do Mogno",  # Título completo do livro
         "autor": [
             "Júlio Eustáquio de Melo",
@@ -917,11 +917,11 @@ biblioteca = [
             "Varione Alves Martins"
         ],  # Nome(s) do(s) autor(es)
         "ano": 1989,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Mogno",
             "Comportamento na secagem",
@@ -929,24 +929,24 @@ biblioteca = [
             "Propriedades físicas"
         ],  # Lista de palavras-chave (ex: ["ultrassom", "falhas"])
         "tipo_de_material": "Artigo",  # Livro, apostila, manual, tese, artigo
-        "nivel": "",  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "nivel": None,  # Público-alvo (Graduação, Pós, Técnico)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Madeiras",  # Título completo do livro
         "autor": "Eládio Petrucci",  # Nome(s) do(s) autor(es)
         "ano": 1980,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Classificação das árvores",
             "Folhosas",
@@ -959,25 +959,25 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Compostos à base de madeira",  # Título completo do livro
         "autor": [
             "Mário Rabelo de Souza",
             "Divino Eterno Teixeira"
         ],  # Nome(s) do(s) autor(es)
         "ano": 2002,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
+        "editora": None,  # Nome da editora
         "isbn": "85730001402",  # Código ISBN, se houver
         "palavras_chave": [
             "Madeira",
@@ -992,22 +992,22 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Pequenos Objetos de Madeira - POM",  # Título completo do livro
         "autor": "Gerson Henrique Sternadt",  # Nome(s) do(s) autor(es)
         "ano": 2002,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
+        "editora": None,  # Nome da editora
         "isbn": "8573991399",  # Código ISBN, se houver
         "palavras_chave": [
             "Pequenos Objetos de Madeira - POM",
@@ -1022,25 +1022,25 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Secagem da Madeira",  # Título completo do livro
         "autor": [
             "Márcia Helena Bezerra Marques",
             "Varlone Alves Martins"
         ],  # Nome(s) do(s) autor(es)
         "ano": 2002,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
+        "editora": None,  # Nome da editora
         "isbn": "8573001364",  # Código ISBN, se houver
         "palavras_chave": [
             "Madeira",
@@ -1055,22 +1055,22 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Valorização de madeiras e dos resíduos pelo design de móveis e objetos de decoração",  # Título completo do livro
         "autor": "Márcia Helena de Souza",  # Nome(s) do(s) autor(es)
         "ano": 2002,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
+        "editora": None,  # Nome da editora
         "isbn": "8573001356",  # Código ISBN, se houver
         "palavras_chave": [
             "Madeira",
@@ -1085,23 +1085,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Projeto de Sub-Bases para Pavimentos de Concreto",  # Título completo do livro
         "autor": "Márcio Rocha Pitta",  # Nome(s) do(s) autor(es)
         "ano": 1983,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Português",  # Idioma do livro (ex: Português, Inglês)
-        "editora": "",  # Nome da editora
-        "isbn": "",  # Código ISBN, se houver
+        "editora": None,  # Nome da editora
+        "isbn": None,  # Código ISBN, se houver
         "palavras_chave": [
             "Pavimentos de concreto",
             "Pavimentos de concreto - Sub-base"
@@ -1112,20 +1112,20 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
-        "resumo": "",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
-        "link_externo": "",  # Link para referência externa (ISBN, Google Books)
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
+        "resumo": None,  # Breve descrição do conteúdo
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "link_externo": None,  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",  # Identificador único do livro (ex: L001)
+        "id": None,  # Identificador único do livro (ex: L001)
         "titulo": "Diseño Estructural en Madera",  # Título completo do livro
         "autor": "Miguel A. R. Nevado",  # Nome(s) do(s) autor(es)
         "ano": 1999,  # Ano de publicação (ex: 2025)
-        "categoria": "",  # Tema principal (ex: Ultrassom)
-        "subcategoria": "",  # Tema mais específico (ex: Tomografia acústica)
+        "categoria": None,  # Tema principal (ex: Ultrassom)
+        "subcategoria": None,  # Tema mais específico (ex: Tomografia acústica)
         "idioma": "Espanhol",  # Idioma do livro (ex: Português, Inglês)
         "editora": "Editorial AITIM",  # Nome da editora
         "isbn": "8487381162",  # Código ISBN, se houver
@@ -1151,23 +1151,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],  # Público-alvo (Graduação, Pós, Técnico)
-        "localizacao_fisica": "",  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
-        "disponibilidade": "",  # Disponível, Emprestado, Reservado
+        "localizacao_fisica": None,  # Onde está o exemplar (ex: Estante 2 – Prateleira C)
+        "disponibilidade": None,  # Disponível, Emprestado, Reservado
         "resumo": "Explora a teoria e a prática do design estrutural com madeira, abordando aspectos de cálculo, dimensionamento e análise de estruturas em madeira.",  # Breve descrição do conteúdo
-        "imagem_capa_url": "",  # Link para imagem da capa (Drive, Wikimedia, etc.)
+        "imagem_capa_url": None,  # Link para imagem da capa (Drive, Wikimedia, etc.)
         "link_externo": "https://www.casadellibro.com/libro-diseno-estructural-en-madera/9788487381164/650559",  # Link para referência externa (ISBN, Google Books)
         "data_de_entrada": "2025-10-09"  # Data que o livro foi catalogado (YYYY-MM-DD)
     },
     {
-        "id": "",
+        "id": None,
         "titulo": "Manual do IX Congresso Latinoamericano y del Caribe de Ingenieria Agrícola e do XXXIX Congresso Brasileiro de Engenharia Agrícola",
-        "autor": "",
+        "autor": None,
         "ano": 2010,
-        "categoria": "",
-        "subcategoria": "",
+        "categoria": None,
+        "subcategoria": None,
         "idioma": "Português",
-        "editora": "",
-        "isbn": "",
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [],
         "tipo_de_material": "Cartilha",
         "nivel": [
@@ -1175,23 +1175,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
         "data_de_entrada": "2025-10-09"
     },
     {
-        "id": "",
+        "id": None,
         "titulo": "Seminário Internacional de Utilização de Madeira de Eucalipto para Serraria",
-        "autor": "",
+        "autor": None,
         "ano": 1995,
-        "categoria": "",
-        "subcategoria": "",
+        "categoria": None,
+        "subcategoria": None,
         "idioma": "Português",
-        "editora": "",
-        "isbn": "",
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [
             "Serraria",
             "Madeira",
@@ -1204,23 +1204,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
         "data_de_entrada": "2025-10-09"
     },
     {
-        "id": "",
+        "id": None,
         "titulo": "Revista do Instituto Florestal, vol. 18, n. 2",
-        "autor": "",
+        "autor": None,
         "ano": 2006,
-        "categoria": "",
-        "subcategoria": "",
+        "categoria": None,
+        "subcategoria": None,
         "idioma": "Português",
-        "editora": "",
-        "isbn": "",
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [
             "Contaminação biológica por Pinus spp.",
             "Identificação de terpenos",
@@ -1238,23 +1238,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
         "data_de_entrada": "2025-10-09"
     },
         {
-        "id": "",
+        "id": None,
         "titulo": "Revista do Instituto Florestal, vol. 20, n. 2",
-        "autor": "",
+        "autor": None,
         "ano": 2008,
-        "categoria": "",
-        "subcategoria": "",
+        "categoria": None,
+        "subcategoria": None,
         "idioma": "Português",
-        "editora": "",
-        "isbn": "",
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [
             "Hidrelétricas",
             "Polinização aberta",
@@ -1276,23 +1276,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
         "data_de_entrada": "2025-10-09"
     },
     {
-        "id": "",
+        "id": None,
         "titulo": "Floresta e Ambiente: FLORAM, v. 19, n. 2",
-        "autor": "",
+        "autor": None,
         "ano":  2012,
-        "categoria": "",
-        "subcategoria": "",
+        "categoria": None,
+        "subcategoria": None,
         "idioma": "Português",
-        "editora": "",
-        "isbn": "",
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [
             "Ciências florestais - Periódicos",
             "Universidade Federal do Rio de Janeiro. Instituto de Florestas"
@@ -1303,23 +1303,23 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
         "link_externo": "https://www.floram.org",
         "data_de_entrada": "2025-10-09"
     },
     {
-        "id": "",
+        "id": None,
         "titulo": 'Proceedings of the "Second International Symposium on Natural Polymers and Composites"',
-        "autor": "",
+        "autor": None,
         "ano": 1998,
-        "categoria": "",
-        "subcategoria": "",
+        "categoria": None,
+        "subcategoria": None,
         "idioma": "Inglês",
-        "editora": "",
-        "isbn": "",
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [
             "Composites",
             "Natural Polymers and Fibers",
@@ -1334,231 +1334,231 @@ biblioteca = [
             "Graduação",
             "Pós"
         ],
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
         "data_de_entrada": "2025-10-09"
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano":  None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano":  None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano":  None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave": [],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     },
     {
-        "id": "",
-        "titulo": "",
-        "autor": "",
+        "id": None,
+        "titulo": None,
+        "autor": None,
         "ano": None,
-        "categoria": "",
-        "subcategoria": "",
-        "idioma": "",
-        "editora": "",
-        "isbn": "",
+        "categoria": None,
+        "subcategoria": None,
+        "idioma": None,
+        "editora": None,
+        "isbn": None,
         "palavras_chave":[],
-        "tipo_de_material": "",
-        "nivel": "",
-        "localizacao_fisica": "",
-        "disponibilidade": "",
-        "resumo": "",
-        "imagem_capa_url": "",
-        "link_externo": "",
-        "data_de_entrada": ""
+        "tipo_de_material": None,
+        "nivel": None,
+        "localizacao_fisica": None,
+        "disponibilidade": None,
+        "resumo": None,
+        "imagem_capa_url": None,
+        "link_externo": None,
+        "data_de_entrada": None
     }
 ]
