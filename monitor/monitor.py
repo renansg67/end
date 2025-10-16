@@ -1,60 +1,142 @@
-# pages/monitoramento_acessos.py
-
 import streamlit as st
+from datetime import datetime, timedelta
 import pandas as pd
-# Removido 'datetime' e 'fetch_all_accesses' se não for mais usada
-from database import fetch_access_counts 
+import time
+from database import fetch_access_counts, fetch_user_activity
 
-# A página Streamlit é o código direto. Não precisamos do wrapper show_access_monitor_page()
-# Vamos definir as colunas de layout
-col1, col2, col3 = st.columns([1, 5, 1])
+# ====================================================================
+# CONFIGURAÇÃO GERAL
+# ====================================================================
 
-# 1. Obter a role do usuário logado 
-user_role = st.session_state.get('user_role')
+# Define o tempo limite para um usuário ser considerado "Online" (em minutos)
+INACTIVITY_THRESHOLD_MINUTES = 5
 
-col2.title("👁️ Monitoramento de Acessos")
-st.markdown("---")
+def format_status(row):
+    """
+    Calcula se o usuário está Online, Inativo ou Offline baseado no último acesso.
+    Retorna o status formatado com emoji.
+    """
+    if pd.isna(row['ultimo_acesso_ativo']):
+        return "⚪ Offline"
+    
+    last_access = row['ultimo_acesso_ativo'].to_pydatetime()
+    time_difference = datetime.now() - last_access
+    
+    if time_difference < timedelta(minutes=INACTIVITY_THRESHOLD_MINUTES):
+        # Online: Último acesso há menos de 5 minutos
+        return f"🟢 Online (em {row['last_access_page']})"
+    elif time_difference < timedelta(minutes=60):
+        # Inativo: Último acesso entre 5 e 60 minutos
+        return f"🟡 Inativo (há {int(time_difference.total_seconds() // 60)} min)"
+    else:
+        # Offline: Último acesso há mais de 60 minutos
+        return f"🔴 Offline"
 
-# 2. Verificação de Permissão
-if user_role != "admin":
-    col2.error("🔒 Acesso Negado. Apenas usuários com a função **ADMIN** podem visualizar o log de acessos.")
-else:
-    # --- RENDERIZAÇÃO APENAS PARA ADMIN ---
-    col2.header("Log de Acessos Agregados por Usuário")
-
-    try:
-        # ATENÇÃO: CHAMADA CORRETA PARA A FUNÇÃO DE CONTAGEM
-        df_acessos = fetch_access_counts() 
+def format_timedelta(dt):
+    """Formata a diferença de tempo para exibição amigável."""
+    if pd.isna(dt):
+        return "N/A"
         
-        # --- DEBUG: Verifique se há dados (apenas para Admin) ---
-        # Remova esta linha após confirmar que funciona
-        # col2.write("DEBUG: Dados retornados pela função fetch_access_counts:")
-        # col2.write(df_acessos) 
-        # --------------------------------------------------------
+    delta = datetime.now() - dt.to_pydatetime()
+    seconds = delta.total_seconds()
+
+    if seconds < 60:
+        return f"{int(seconds)} segundos atrás"
+    elif seconds < 3600:
+        minutes = seconds // 60
+        return f"{int(minutes)} min atrás"
+    elif seconds < 86400:
+        hours = seconds // 3600
+        return f"{int(hours)} horas atrás"
+    else:
+        days = seconds // 86400
+        return f"{int(days)} dias atrás"
+
+def show_monitor_page():
+    st.title("💻 Monitor de Atividade & Acessos")
+    st.markdown("---")
+
+    # --- 1. MONITORAMENTO EM TEMPO REAL ---
+    st.header("Status em Tempo Real (Atualização a cada 10s)")
+    
+    # Criamos um placeholder para atualizar dinamicamente o status
+    realtime_placeholder = st.empty()
+    
+    # Colocamos a lógica de atualização dentro do placeholder
+    with realtime_placeholder.container():
         
-        if df_acessos.empty:
-            col2.info("Nenhum acesso registrado ainda. Faça um login para iniciar o log.")
+        # O Streamlit connection usa um TTL=10s para cache, garantindo atualização.
+        df_activity = fetch_user_activity()
+
+        if df_activity.empty:
+            st.info("Nenhuma atividade registrada ainda.")
+            
         else:
-            col2.dataframe(
-                df_acessos, 
+            # Calcula o Status
+            df_activity['status'] = df_activity.apply(format_status, axis=1)
+            
+            # Formata a última atividade
+            df_activity['Última Atividade'] = df_activity['ultimo_acesso_ativo'].apply(format_timedelta)
+            
+            # Renomeia e seleciona colunas para exibição
+            df_display = df_activity[[
+                'status', 
+                'Última Atividade',
+                'email', 
+                'role', 
+                'last_access_page'
+            ]].rename(columns={
+                'email': 'Usuário',
+                'role': 'Função',
+                'last_access_page': 'Página Atual'
+            })
+            
+            # Oculta a coluna original para evitar confusão se o usuário expandir
+            df_display['Página Atual'] = df_display['Página Atual'].str.title()
+            
+            # Exibe o Dataframe em tempo real
+            st.dataframe(
+                df_display, 
                 width="stretch",
-                hide_index=True,
-                column_config={
-                    "email": "E-mail do Usuário",
-                    "role": st.column_config.TextColumn("Função", help="Função mais recente do usuário."),
-                    # MAPEAMENTO DAS NOVAS COLUNAS
-                    "total_acessos": st.column_config.NumberColumn(
-                        "Total de Acessos",
-                        help="Número total de logins deste usuário.",
-                        format="%d"
-                    ),
-                    "ultimo_acesso": st.column_config.DatetimeColumn(
-                        "Último Acesso",
-                        help="Data e hora do login mais recente.",
-                        format="DD/MM/YYYY HH:mm:ss"
-                    )
-                }
+                hide_index=True
             )
-    except Exception as e:
-        col2.error(f"Erro ao carregar o log de acessos: {e}")
-        col2.exception(e)
+            
+            # Métricas rápidas
+            col1, col2, col3 = st.columns(3)
+            col1.metric("Usuários Ativos", df_activity['status'].str.contains("🟢 Online").sum())
+            col2.metric("Usuários Inativos", df_activity['status'].str.contains("🟡 Inativo").sum())
+            col3.metric("Usuários Registrados", df_activity['email'].nunique())
+
+    st.markdown("---")
+
+    # --- 2. HISTÓRICO GERAL DE ACESSOS ---
+    st.header("Histórico de Acessos e Estatísticas")
+
+    with st.spinner("Buscando estatísticas de acesso..."):
+        df_counts = fetch_access_counts()
+    
+    if not df_counts.empty:
+        # Formata a coluna 'ultimo_acesso' para exibição
+        df_counts['ultimo_acesso'] = df_counts['ultimo_acesso'].dt.strftime('%d/%m/%Y %H:%M:%S')
+        
+        # Renomeia colunas para exibição
+        df_counts.rename(columns={
+            'email': 'Usuário',
+            'role': 'Função',
+            'total_acessos': 'Total de Logins',
+            'ultimo_acesso': 'Último Login'
+        }, inplace=True)
+
+        st.dataframe(
+            df_counts,
+            width="stretch",
+            hide_index=True
+        )
+    else:
+        st.warning("Nenhum histórico de acesso encontrado na tabela 'acessos'.")
+        
+
+if __name__ == '__main__':
+    # Esta parte só é executada se este arquivo for rodado como script principal, 
+    # mas em uma aplicação multipáginas, ele é acessado via app.py
+    show_monitor_page()
