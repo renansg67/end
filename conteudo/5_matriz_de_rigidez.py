@@ -1,10 +1,44 @@
-import streamlit as st
 
-col1, col2, col3 = st.columns([1, 3, 1])
+import streamlit as st
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
+
 
 def matriz_de_rigidez_page():
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
 
+    update_user_activity(user_email, user_role, 'matriz de rigidez')
+
+    col1, col2, col3 = st.columns([1, 3, 1])
     col2.title("Bases teóricas para obtenção da matriz de rigidez por método de propagação de ondas")
+
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Bases teóricas para obtenção da matriz de rigidez por método de propagação de ondas](#bases-teoricas-para-obtencao-da-matriz-de-rigidez-por-metodo-de-propagacao-de-ondas)
+            - [Início](#inicio)
+            - [Materiais isotrópicos](#materiais-isotropicos)
+                - [Matriz de rigidez](#materiais-isotropicos)
+                - [Matriz de flexibilidade](#materiais-isotropicos)
+            - [Materiais isotrópicos transversais](#materiais-isotropicos-transversais)
+                - [Plano 12 de isotropia](#plano-12-de-isotropia)
+                    - [Matriz de rigidez](#materiais-isotropicos-transversais)
+                    - [Matriz de flexibilidade](#materiais-isotropicos-transversais)
+                - [Plano 13 de isotropia](#plano-13-de-isotropia)
+                    - [Matriz de rigidez](#plano-13-de-isotropia)
+                    - [Matriz de flexibilidade](#plano-13-de-isotropia)
+                - [Plano 23 de isotropia](#plano-23-de-isotropia)
+                    - [Matriz de rigidez](#plano-23-de-isotropia)
+                    - [Matriz de flexibilidade](#plano-23-de-isotropia)
+            - [Materiais ortotrópicos](#materiais-ortotropicos)
+                - [Matriz de rigidez](#materiais-ortotropicos)
+                - [Matriz de flexibilidade](#materiais-ortotropicos)
+                    - [Propagação nos planos](#propagacao-nos-planos)
+                        - [Propagação de ondas no plano 12](#propagacao-de-ondas-no-plano-12)
+                        - [Propagação de ondas no plano 13](#propagacao-de-ondas-no-plano-13)
+                        - [Propagação de ondas no plano 23](#propagacao-de-ondas-no-plano-23)
+    ''')
 
     col2.header("Início")
 
@@ -487,8 +521,6 @@ def matriz_de_rigidez_page():
             2V_{T}^{2}\rho=\Gamma_{11}
         \end{equation}
     """)
-
-    import streamlit as st
 
     data = [
         {"Coeficiente de rigidez": "$C_{11}$", "Expressão": "$\\rho V_{11}^{2}$", "Tipo de onda": "L"},

@@ -2,7 +2,6 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-from database import update_user_activity
 
 # ⚠️ ASSUMIMOS QUE database.py EXISTE E CONTÉM AS FUNÇÕES ABAIXO
 from database import (
@@ -10,29 +9,13 @@ from database import (
     add_item, 
     update_item, 
     delete_item, 
+    update_user_activity,
+    get_user_email_safely
 )
 
 # Assumindo que app.py está acessível para as funções de role
 # Isso pode falhar se não estiver na estrutura correta;
 # o ideal é passar as informações de autenticação via st.session_state.
-def get_user_role(email):
-    """Define a role do usuário baseado no e-mail e st.secrets.toml."""
-    admin_emails = st.secrets.get("roles", {}).get("admins", [])
-    editor_emails = st.secrets.get("roles", {}).get("editors", [])
-    
-    if email in admin_emails:
-        return "admin"
-    elif email in editor_emails:
-        return "editor"
-    else:
-        return "viewer"
-
-def get_user_email_safely():
-    """Tenta obter o email do usuário logado através da API nativa (st.user)."""
-    user = st.user
-    if user and hasattr(user, 'email'):
-        return user.email
-    return None
 
 # Funções de CRUD Helper
 @st.cache_data(ttl=60)
@@ -248,6 +231,7 @@ def biblioteca_main_page():
         st.stop()
         
     user_role = st.session_state['user_role']
+    
     update_user_activity(user_email, user_role, 'biblioteca')
         
     # 2. Título da Página 

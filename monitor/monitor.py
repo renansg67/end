@@ -1,8 +1,12 @@
 import streamlit as st
 from datetime import datetime, timedelta
 import pandas as pd
-import time
-from database import fetch_access_counts, fetch_user_activity
+from database import (
+    fetch_access_counts, 
+    fetch_user_activity,
+    get_user_email_safely,
+    update_user_activity
+)
 
 # ====================================================================
 # CONFIGURAÇÃO GERAL
@@ -53,11 +57,17 @@ def format_timedelta(dt):
         return f"{int(days)} dias atrás"
 
 def show_monitor_page():
-    st.title("💻 Monitor de Atividade & Acessos")
-    st.markdown("---")
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'monitor')
+
+    col1, col2, col3 = st.columns([1, 5, 1])
+    col2.title("💻 Monitor de Atividade & Acessos")
+    col2.markdown("---")
 
     # --- 1. MONITORAMENTO EM TEMPO REAL ---
-    st.header("Status em Tempo Real (Atualização a cada 10s)")
+    col2.header("Status em Tempo Real (Atualização a cada 10s)")
     
     # Criamos um placeholder para atualizar dinamicamente o status
     realtime_placeholder = st.empty()
@@ -69,7 +79,7 @@ def show_monitor_page():
         df_activity = fetch_user_activity()
 
         if df_activity.empty:
-            st.info("Nenhuma atividade registrada ainda.")
+            col2.info("Nenhuma atividade registrada ainda.")
             
         else:
             # Calcula o Status
@@ -95,22 +105,23 @@ def show_monitor_page():
             df_display['Página Atual'] = df_display['Página Atual'].str.title()
             
             # Exibe o Dataframe em tempo real
-            st.dataframe(
+            col2.dataframe(
                 df_display, 
                 width="stretch",
                 hide_index=True
             )
             
             # Métricas rápidas
-            col1, col2, col3 = st.columns(3)
-            col1.metric("Usuários Ativos", df_activity['status'].str.contains("🟢 Online").sum())
-            col2.metric("Usuários Inativos", df_activity['status'].str.contains("🟡 Inativo").sum())
-            col3.metric("Usuários Registrados", df_activity['email'].nunique())
+            col1, col2, col3, col4, col5 = st.columns([1, 1.67, 1.67, 1.67, 1])
+            col2.metric("Usuários Ativos", df_activity['status'].str.contains("🟢 Online").sum())
+            col3.metric("Usuários Inativos", df_activity['status'].str.contains("🟡 Inativo").sum())
+            col4.metric("Usuários Registrados", df_activity['email'].nunique())
 
-    st.markdown("---")
+    col1, col2, col3 = st.columns([1, 5, 1])
+    col2.markdown("---")
 
     # --- 2. HISTÓRICO GERAL DE ACESSOS ---
-    st.header("Histórico de Acessos e Estatísticas")
+    col2.header("Histórico de Acessos e Estatísticas")
 
     with st.spinner("Buscando estatísticas de acesso..."):
         df_counts = fetch_access_counts()
@@ -127,13 +138,13 @@ def show_monitor_page():
             'ultimo_acesso': 'Último Login'
         }, inplace=True)
 
-        st.dataframe(
+        col2.dataframe(
             df_counts,
             width="stretch",
             hide_index=True
         )
     else:
-        st.warning("Nenhum histórico de acesso encontrado na tabela 'acessos'.")
+        col2.warning("Nenhum histórico de acesso encontrado na tabela 'acessos'.")
         
 
 if __name__ == '__main__':

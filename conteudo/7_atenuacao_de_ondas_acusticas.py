@@ -1,9 +1,30 @@
 import streamlit as st
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
 
 def atenuacao_de_ondas_acusticas():
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'atenuação de ondas acústicas')
+
     col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.title("Atenuação de ondas acústicas em sólidos")
+
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Atenuação de ondas acústicas em sólidos](#atenuacao-de-ondas-acusticas-em-solidos)
+            - [Início](#inicio)
+            - [Principais fatores relacionados à atenuação](#fatores-principais-relacionados-a-atenuacao)
+            - [Atenuação em materiais isotrópicos](#atenuacao-em-materiais-isotropicos)
+            - [Materiais com fontes dispersoras](#materiais-com-fontes-dispersoras)
+            - [Impacto das fontes dispersoras](#impacto-das-fontes-dispersoras)
+            - [Atenuação em materiais com grãos colunares](#atenuacao-em-materiais-com-graos-colunares)
+            - [Atenuação em materiais pouco rígidos](#atenuacao-em-materiais-pouco-rigidos)
+            - [Atenuação na madeira](#atenuacao-na-madeira)
+    ''')
 
     col2.header("Início")
 

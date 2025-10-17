@@ -1,11 +1,46 @@
 import streamlit as st
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
 
 def inspecao_concreto():
-    st.set_page_config(layout="wide")
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'inspeção de estrututuras de concreto e madeira')
 
     col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.title("Ensaios não destrutivos para a inspeção de estruturas de madeira e concreto")
+
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Ensaios não destrutivos para a inspeção de estruturas de madeira e concreto](#ensaios-nao-destrutivos-para-a-inspecao-de-estruturas-de-madeira-e-concreto)
+            - [Início](#inicio)
+            - [Madeira](#madeira)
+                - [Cronometragem do tempo de viagem da onda de tensão](#cronometragem-do-tempo-de-viagem-da-onda-de-tensao)
+                - [Penetrografia](#penetrografia)
+                - [*Pilodyn*](#pilodyn)
+                - [Tomografia acústica](#tomografia-acustica)
+                - [Tomografia elétrica](#tomografia-eletrica)
+                - [Termografia](#termografia)
+                - [Radar de penetração de solo (GPR)](#radar-de-penetracao-de-solo-gpr)
+        - [Concreto](#concreto)
+            - [Método eletromagnético (Pacometria)](#metodo-eletromagnetico-pacometria)
+                - [Pacometria no ensaio de esclerometria](#pacometria-no-ensaio-de-esclerometria)
+                - [Pacometria no ensaio de ultrassonografia](#pacometria-no-ensaio-de-ultrassonografia)
+                - [Pacometria no ensaio de potencial de corrosão](#pacometria-no-ensaio-de-potencial-de-corrosao)
+                - [Pacometria no ensaio de resistividade elétrica](#pacometria-no-ensaio-de-resistividade-eletrica)
+                - [Pacometria no ensaio de penetração de pinos](#pacometria-no-ensaio-de-penetracao-de-pinos)
+            - [Ensaio de penetração de pinos](#ensaio-de-penetracao-de-pinos)
+            - [Ensaio de raios X e $\\gamma$](#ensaio-de-raios-x-e-g-gammag)
+            - [Ensaio de inspeção de imagens](#ensaio-de-inspecao-de-imagens)
+            - [Ensaio de profundidade de carbonatação](#ensaio-de-profundidade-de-carbonatacao)
+            - [Ensaio de resistividade elétrica](#ensaio-de-resistividade-eletrica)
+            - [Ensaio de potencial de corrosão](#ensaio-de-potencial-de-corrosao)
+            - [Radar de penetração de solo (GPR)](#radar-de-penetracao-de-solo-gpr)
+            - [Termografia](#termografia)
+    ''')
 
     col2.header("Início")
 
@@ -114,6 +149,8 @@ def inspecao_concreto():
     col1, col2, col3, col4 = st.columns([1, 1.4, 1.6, 1])
 
     col2.markdown("O ensaio de profundidade de carbonatação é imprescindível de ser realizado em estruturas de concreto. Baseado no indicador de fenolftaleína, ele permite diferenciar partes da estrutura que estão com $\\text{pH}>9$ por meio da coloração rosada presente no local. Entretanto, no caso da carbonatação, devido a tendência de redução no valor do pH, regiões carbonatadas tendem a ficar incolores pelo indicador. O fenômeno químico tratado, se não acompanhado e corrigido de forma correta, pode ocasionar sérios riscos à integridade do concreto e das armaduras em seu interior. Ele é caracterizado por não ser visível a olho nu, necessitando do teste indicado anteriormente por meio do indicador de fenolftaleína. No concreto, a presença de carbonatação tende a aumentar a dureza do concreto devido à característica rochosa do material, de modo que sua resistência à compressão tende a aumentar. Todavia, no que diz respeito ao aço das armaduras, ele apresenta um risco à integridade já que colabora para a despassivação das armaduras, aumentando a susceptibilidade do material à corrosão.")
+
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Reinforcement_corrosion.JPG/960px-Reinforcement_corrosion.JPG", caption="Corrosion of reinforcement in concrete, dgania b, israel")
 
     col1, col2, col3 = st.columns([1, 3, 1])
 

@@ -1,9 +1,42 @@
 import streamlit as st
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
+
 
 def propagacao_de_ondas_acusticas():
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'propagação de ondas acústicas em sólidos')
+
     col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.title("Fatores que afetam a propagação de ondas acústicas em sólidos")
+
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Fatores que afetam a propagação de ondas acústicas em sólidos](#fatores-que-afetam-a-propagacao-de-ondas-acusticas-em-solidos)
+            - [Início](#inicio)
+            - [Fatores relacionados aos fenômenos ondulatórios](#fatores-relacionados-aos-fenomenos-ondulatorios)
+                - [Impedância acústica](#impedancia-acustica)
+                - [Coeficientes de reflexão e transmissão](#coeficientes-de-reflexao-e-transmissao)
+                - [Fenômeno da refração](#fenomeno-da-refracao)
+                - [Conceito de ângulo crítico](#conceito-de-angulo-critico)
+                - [Divergência do feixe acústico](#divergencia-do-feixe-acustico)
+                - [Ressonância](#ressonancia)
+                - [Zona de Fresnel (Campo próximo)](#zona-de-fresnel-campo-proximo)
+                - [Zona de Fraunhofer (Campo distante)](#zona-de-fraunhofer-campo-distante)
+                - [Anisotropia do material](#anisotropia-do-material)
+                    - [Materiais isotrópicos](#materiais-isotropicos)
+                    - [Materiais ortotrópicos](#materiais-ortotropicos)
+                    - [Materiais compósitos e laminados](#materiais-compositos-e-laminados)
+                - [Temperatura e umidade](#temperatura-e-umidade)
+                - [Grãos e cristais](#graos-e-cristais)
+                - [Tamanho e forma](#tamanho-e-forma)
+                - [Frequência dos transdutores](#frequencia-dos-transdutores)
+                - [Amortecimento dos transdutores](#amortecimento-dos-transdutores)
+    ''')
 
     col2.header("Início")
 

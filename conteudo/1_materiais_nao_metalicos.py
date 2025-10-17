@@ -1,10 +1,43 @@
 import streamlit as st
 
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
+
 def materiais_nao_metalicos_page():
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'materiais não metálicos')
+
     col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.title("Ensaios não destrutivos para a caracterização de materiais de construção não metálicos")
 
+    col1.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Reciprocal_roof_structure%2C_the_Octagonal_Shelter%2C_Mags_Wood_in_Evanton_Community_Wood_%28geograph_6866216%29.jpg/960px-Reciprocal_roof_structure%2C_the_Octagonal_Shelter%2C_Mags_Wood_in_Evanton_Community_Wood_%28geograph_6866216%29.jpg", caption="Estrutura de Cobertura Recíproca ('Reciprocal Roof'), o Abrigo Octogonal em Mags Wood. **Crédito e Licença:** Julian Paren, via geograph.org.uk (CC BY-SA 2.0).")
+
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Início](#inicio)
+        - [Concreto](#concreto)
+            - [Ensaio para medição da dureza superficial](#ensaio-para-medicao-da-dureza-superficial)
+            - [Ensaio de propagação de ondas de tensão](#ensaio-de-propagacao-de-ondas-de-tensao)
+                - [Método da frequência de ressonância](#metodo-da-frequencia-de-ressonancia)
+                - [Método da propagação de pulso ultrassônico](#metodo-da-propagacao-de-pulso-ultrassonico)
+            - [Ensaio de penetração de pinos](#ensaio-de-penetracao-de-pinos)
+        - [Madeira](#madeira)
+            - [Métodos utilizando a frequência de ressonância](#metodos-utilizando-a-frequencia-de-ressonancia)
+                - [Método de vibração transversal](#metodo-de-vibracao-transversal)
+                - [Método dos modos de vibração](#metodo-dos-modos-de-vibracao)
+            - [Ensaio de flexão estática](#ensaio-de-flexao-estatica)
+            - [Método da propagação de ondas de tensão](#metodo-da-propagacao-de-ondas-de-tensao)
+                - [Barra viscoelástica submetida a um impacto](#barra-viscoelastica-submetida-a-um-impacto)
+                - [Cronometragem do tempo de propagação da onda de tensão](#cronometragem-do-tempo-de-propagacao-da-onda-de-tensao)
+                - [Método do pulso-eco](#metodo-do-pulso-eco)
+                - [Pitch and catch](#pitch-and-catch)
+                - [Posicionamento dos acelerômetros](#posicionamento-dos-acelerometros)
+    ''')
+                                                          
     col2.header("Início")
 
     col2.write("Quando se fala de materiais de construção não metálicos, pode-se fazer referência tanto às estruturas de concreto quanto às de madeira, que são amplamente utilizadas. O objetivo da utilização de ensaios não destrutivos para a caracterização desses materiais, como tem se apresentado nas últimas décadas com o avanço do conhecimento e das técnicas da área, é complementar e facilitar as análises, além de permitir maior escalabilidade quanto às condições de resistência e rigidez do material ensaiado. Além disso, esse método visa complementar a caracterização realizada por meio de ensaios destrutivos, podendo encurtar o caminho até a caracterização destrutiva, desde que as propriedades da peça ensaiada sejam conhecidas e existam estudos anteriores detalhados o suficiente para validar o ensaio não destrutivo aplicado com boa margem de confiança. Dependendo do tipo de estudo, é possível até dispensar métodos destrutivos, que exigem mais tempo para execução.")
@@ -153,7 +186,7 @@ def materiais_nao_metalicos_page():
         \end{equation}
     ''')
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.write("Módulo de elasticidade estático¹")
 
@@ -173,7 +206,7 @@ def materiais_nao_metalicos_page():
         \end{equation}
     ''')
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.write("Fatores que afetam a velocidade de propagação do pulso ultrassônico no concreto²")
 
@@ -238,7 +271,7 @@ def materiais_nao_metalicos_page():
         \end{equation}
     ''')
 
-    col1, col2, col3 = st.columns([1, 2, 1])
+    col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.write("a partir do aparato experimental abaixo")
 

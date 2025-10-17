@@ -1,9 +1,35 @@
 import streamlit as st
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
 
 def inspecao_de_arvores():
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'inspeção de árvores')
+
     col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.title("Ensaios não destrutivos para inspeção de árvores urbanas")
+
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Ensaios não destrutivos para inspeção de árvores urbanas](#ensaios-nao-destrutivos-para-inspecao-de-arvores-urbanas)
+            - [Inspeção técnica nível 3](#inspecao-tecnica-nivel-3)
+                - [Drone](#drone)
+                - [Trabalho em altura em árvores](#trabalho-em-altura-em-arvores)
+                - [Espada de ar](#espada-de-ar)
+                - [Tomografia](#tomografia)
+                - [Sonda](#sonda)
+                - [Modelos probabilísticos](#modelos-probabilisticos)
+                - [Clinômetro](#clinometro)
+                - [Hipsômetro](#hipsometro)
+                - [Trado de incremento](#trado-de-incremento)
+                - [Câmeras termográficas](#cameras-termograficas)
+                - [Ensaio de ancoragem](#ensaio-de-ancoragem)
+                - [Laudo de inspeção](#laudo-de-inspecao)
+    ''')                                                             
 
     col3.warning("""
     🌴 **I Congresso de Manejo e Conservação de Árvores Urbanas – Painel 3 (24/03)**  
@@ -19,23 +45,21 @@ def inspecao_de_arvores():
     ▶️ [Assistir no YouTube](https://www.youtube.com/watch?v=fozt9dPI17o)
     """)
 
-
+    
     col2.write("Os principais ensaios não destrutivos para inspeção  de árvores urbanas estão em conformidade com a ABNT NBR 16246-3:2019. Ela trata da avaliação de risco das árvores urbanas trazendo especificando as práticas e equipamentos que devem ser utilizados em cada nível de inspeção.")
     col2.write("A inspeção técnica de nível 3 é a mais avançada entre todas as técnicas. Cabe aos técnicos e profissionais que a executam realizar a inspeção com técnicas de nível 2 visando ter uma panorama geral da árvore inspecionada. A de nível 2 consiste em etapas como: Inspeção em 360° ao redor da árvore visando identificar locais com fragilidades como ocos, fissuras, crescimento desordenado de fungos, perda de vitalidade, ataque de insetos xilófagos e galhos secos. Para isso, o profissional pode lançar mão de binóculos, trena florestal, clinômetro¹, hipsômetro² e trado de incremento³.")
 
-    col2.info("¹Dispositivo utilizado para a medição de ângulo, facilitando cálculos dendrométricos")
+    col1.info("¹Dispositivo utilizado para a medição de ângulo, facilitando cálculos dendrométricos")
 
-    col2.info("²Dispositivo utilizado para calcular a altura das árvores de forma direta. O princípio de funcionamento é análogo ao do clinômetro, porém no hipsômetro os cálculos são realizados e mostrados em seu visor agilizando as etapas de cálculo manual.")
+    col1.info("²Dispositivo utilizado para calcular a altura das árvores de forma direta. O princípio de funcionamento é análogo ao do clinômetro, porém no hipsômetro os cálculos são realizados e mostrados em seu visor agilizando as etapas de cálculo manual.")
 
-    col2.info("³Dispositivo manual normalmente utilizado para extrair amostras à altura do peito do operador, tendo em vista a necessidade de um posicionamento adequado para vencer a resistência do tronco durante o processo de extração das amostras cilíndricas} para extração de amostras do tronco. A utilização de martelo emborrachado para o ensaio de percussão pode ser feita objetivando encontrar locais com som cavo que possam indicar locais de fragilidade estrutural, seja por biodeterioração ou cavidades.")
+    col1.info("³Dispositivo manual normalmente utilizado para extrair amostras à altura do peito do operador, tendo em vista a necessidade de um posicionamento adequado para vencer a resistência do tronco durante o processo de extração das amostras cilíndricas} para extração de amostras do tronco. A utilização de martelo emborrachado para o ensaio de percussão pode ser feita objetivando encontrar locais com som cavo que possam indicar locais de fragilidade estrutural, seja por biodeterioração ou cavidades.")
 
     col2.header("Inspeção técnica nível 3")
 
     col2.write("Feito isso, a técnica de nível 3 caracteriza-se pelo uso de tecnologias mais avançadas para inspeção podendo utilizar práticas e equipamentos como:")
 
     col2.subheader("Drone")
-
-    col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.write("O uso de aeronaves remotamente pilotadas (RPA), popularmente conhecidas como drones¹, tem se tornado cada vez mais frequente em inspeções arbóreas de nível 3. Esse recurso permite a obtenção de imagens e vídeos em alta resolução da copa, do tronco e de regiões de difícil acesso, reduzindo a necessidade de trabalhos em altura e aumentando a segurança da equipe responsável pela inspeção.")
 

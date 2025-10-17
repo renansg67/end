@@ -1,10 +1,28 @@
 import streamlit as st
+from database import (
+    get_user_email_safely,
+    update_user_activity
+)
 
 def classificacao_madeira_estrutural_page():
+    user_email = get_user_email_safely()
+    user_role = st.session_state['user_role']
+
+    update_user_activity(user_email, user_role, 'classificação de madeira estrutural')
+
     col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.title("Ensaios não destrutivos normatizados para a classificação da madeira estrutural")
 
+    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+        - [Ensaios não destrutivos normatizados para a classificação da madeira estrutural]()
+            - [Início](#inicio)
+            - [Sobre os ensaios e a ABNT NBR 7190:2022](#sobre-os-ensaios-e-a-abnt-nbr-7190-2022)
+                - [Classificação visual](#classificacao-visual)
+                - [Classificação mecânica](#classificacao-mecanica)
+                - [Densidade aparente](#densidade-aparente)
+    ''')
+                                                                     
     col2.header("Início")
 
     col1, col2, col3, col4 = st.columns([1, 1, 2, 1])

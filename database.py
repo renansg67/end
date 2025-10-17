@@ -2,12 +2,36 @@
 
 import streamlit as st
 import pandas as pd
+import numpy as np
+import time
 from typing import Dict
 from datetime import datetime
 # Importações necessárias para o SQLAlchemy/Streamlit Connection
 # Usamos 'text as sql' para facilitar a escrita de queries DDL/DML com session.execute
 from sqlalchemy import text 
 
+# =========================================================================
+# FUNÇÕES DE AUTH E ROLE (Autônomo para evitar Duplicação de Chave em app.py)
+# =========================================================================
+
+def get_user_role(email):
+    """Define a role do usuário baseado no e-mail e st.secrets.toml."""
+    admin_emails = st.secrets.get("roles", {}).get("admins", [])
+    editor_emails = st.secrets.get("roles", {}).get("editors", [])
+    
+    if email in admin_emails:
+        return "admin"
+    elif email in editor_emails:
+        return "editor"
+    else:
+        return "viewer"
+
+def get_user_email_safely():
+    """Tenta obter o email do usuário logado através da API nativa (st.user)."""
+    user = st.user
+    if user and hasattr(user, 'email'):
+        return user.email
+    return None
 # ----------------------------------------------------
 # CONFIGURAÇÃO DE CONEXÃO (st.connection)
 # ----------------------------------------------------

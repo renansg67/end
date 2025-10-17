@@ -2,38 +2,15 @@ import streamlit as st
 import pandas as pd
 from datetime import datetime
 
-from database import update_user_activity
-
 # Importa as funções de CRUD de Equipamentos do database.py
 from database import (
     fetch_all_items, 
     add_item, 
     update_item, 
-    delete_item
+    delete_item,
+    get_user_email_safely,
+    update_user_activity
 )
-
-# =========================================================================
-# FUNÇÕES DE AUTH E ROLE (Autônomo para evitar Duplicação de Chave em app.py)
-# =========================================================================
-
-def get_user_email_safely():
-    """Tenta obter o email do usuário logado através da API nativa (st.user)."""
-    user = st.user
-    if user and hasattr(user, 'email'):
-        return user.email
-    return None
-
-def get_user_role(email):
-    """Define a role do usuário baseado no e-mail e st.secrets.toml."""
-    admin_emails = st.secrets.get("roles", {}).get("admins", [])
-    editor_emails = st.secrets.get("roles", {}).get("editors", [])
-    
-    if email in admin_emails:
-        return "admin"
-    elif email in editor_emails:
-        return "editor"
-    else:
-        return "viewer"
 
 # =========================================================================
 # FUNÇÕES DE ACESSO A DADOS (com cache)
@@ -232,7 +209,7 @@ def equipamentos_main_page():
     
     # 1. Obter e verificar a role do usuário (usando funções autônomas)
     user_email = get_user_email_safely()
-    user_role = get_user_role(user_email) if user_email else None
+    user_role = st.session_state['user_role']
 
     update_user_activity(user_email, user_role, 'equipamentos')
 
