@@ -6,9 +6,6 @@ from database import (
     get_user_role,
     get_user_email_safely
 ) 
-from datetime import datetime
-import pandas as pd
-import sqlite3 # Importação necessária se o database.py usa sqlite3
 
 st.set_page_config(layout="wide")
 
@@ -32,7 +29,7 @@ pages = {
         st.Page("./equipamentos/equipamentos.py", title="Equipamentos", icon="🛠")
     ],
     "Biblioteca": [
-        st.Page("./biblioteca/introducao.py", title="Introdução", icon="📚"),
+        st.Page("./biblioteca/introducao.py", title="Introdução", icon="👋"),
         st.Page("./biblioteca/biblioteca.py", title="Biblioteca", icon="📚")
     ],
     "Empréstimos": [

@@ -19,6 +19,7 @@ def apresentacao_page():
     col2.markdown("---")
 
     col2.header(f":rainbow[Olá,] :blue[{st.user.name.split(" ")[0]}]")
+    col2.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg/960px-Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg")
 
     with col1.expander("Ultrassom para inspeção de árvores", expanded=True):
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Abstract_pattern_on_a_tree_stump.jpg/330px-Abstract_pattern_on_a_tree_stump.jpg")
