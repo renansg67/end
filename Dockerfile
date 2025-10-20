@@ -1,9 +1,8 @@
-# Dockerfile (Versão Corrigida)
-
-# 1. Imagem Base
+# Dockerfile (Versão Final com start.sh)
 FROM python:3.13-slim
 WORKDIR /app
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-CMD streamlit run app.py --server.port $PORT --server.enableCORS=false --server.enableXsrfProtection=false
+RUN chmod +x start.sh
+CMD ["./start.sh"]
