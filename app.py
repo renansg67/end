@@ -45,7 +45,7 @@ pages = {
 # ----------------------------------------------------
 
 user_email = get_user_email_safely()
-col1, col2, col3 = st.columns([1, 3, 1])
+col1, col2, col3 = st.columns([.25, 3, 1.5])
 
 if user_email:
     # --- PARTE LOGADA: CONFIGURAÇÃO PÓS-LOGIN ---
@@ -82,6 +82,7 @@ if user_email:
     # Puxa o role e o email do state
     user_role = st.session_state['user_role']
     
+    col1, col2, col3 = st.columns([1, 3, 1])
     col1.header(f":rainbow[Olá, {st.user.given_name}]")
     col1.write(f"Logado com: {st.user.email}")
 
@@ -118,11 +119,23 @@ else:
     # Limpa todo o estado para garantir um novo início no próximo login
     if 'session_initialized' in st.session_state:
         st.session_state.clear()
-        
+    
+    col1, col2, col3, col4 = st.columns([1, 1, 1, 1])
+    col1.image("https://upload.wikimedia.org/wikipedia/commons/6/6e/Woody_Dicot_Stem_Cross_Section_Quercus_Wood_40x_%2834991087693%29.jpg")
+    col2.image("https://upload.wikimedia.org/wikipedia/commons/4/4c/Gymnosperm_Stem_Soft_Wood_in_Pinus_%2836087417260%29.jpg")
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/a/aa/Gymnosperm_Stem_Circular_Bordered_Pits_in_Pinus_Wood_%2836484401545%29.jpg")
+    col4.image("https://upload.wikimedia.org/wikipedia/commons/a/ac/Gymnosperm_Stem_Soft_Wood_in_Pinus_%2836087426450%29.jpg")
+
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
+
     # Botão de Login
     if col3.container(horizontal_alignment='right').button("Login :material/login:", type="primary", key="main_login_button"):
         st.login()
     
+    col3.info(":material/warning: Por favor, clique no botão **'Login :material/login:'** no canto superior direito para autenticar com sua conta Google e entrar.")
+    col3.warning(":material/lock: Este login é gerenciado com segurança via sua conta Google (OAuth).")
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/UT_flaw_detection_-_crack.png/960px-UT_flaw_detection_-_crack.png")
+
     col2.markdown("""
     Seja bem-vindo(a) ao portal oficial do **LabEND (Laboratório de Ensaios Não Destrutivos)**, um núcleo de pesquisa e aplicação de técnicas avançadas no Laboratório de Materiais (LME).
 
@@ -153,11 +166,13 @@ else:
 
     Para acessar o catálogo da biblioteca e utilizar as funcionalidades exclusivas de empréstimo e monitoria, por favor, utilize o sistema de login no menu lateral. Caso contrário, explore o **Conteúdo** e a lista de **Equipamentos** livremente.
     """)
-
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
     if col2.button("Começar", width="stretch", type="primary"):
         st.login()
-
-    col1.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Picea_abies_wood_texture.jpg/960px-Picea_abies_wood_texture.jpg", caption="[Image of Wood Texture]")
-    col3.info(":material/warning: Por favor, clique no botão **'Login :material/login:'** no canto superior direito para autenticar com sua conta Google e entrar.")
-    col3.warning(":material/lock: Este login é gerenciado com segurança via sua conta Google (OAuth).")
-    col2.image("https://upload.wikimedia.org/wikipedia/commons/8/8d/CVN-69-SPIE-training.jpg", caption="")
+    
+    #col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Picea_abies_wood_texture.jpg/960px-Picea_abies_wood_texture.jpg")
+    #col2.image("https://upload.wikimedia.org/wikipedia/commons/8/8d/CVN-69-SPIE-training.jpg", caption="")
+    #col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Modeconversion.svg/889px-Modeconversion.svg.png")
+    #col3.image("https://upload.wikimedia.org/wikipedia/commons/a/ad/Type_S.jpg")
+    #col3.image("https://upload.wikimedia.org/wikipedia/commons/4/4b/16_wood_samples.jpg")
+    
