@@ -10,11 +10,11 @@ def inspecao_concreto():
 
     update_user_activity(user_email, user_role, 'inspeção de estrututuras de concreto e madeira')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.title("Ensaios não destrutivos para a inspeção de estruturas de madeira e concreto")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Ensaios não destrutivos para a inspeção de estruturas de madeira e concreto](#ensaios-nao-destrutivos-para-a-inspecao-de-estruturas-de-madeira-e-concreto)
             - [Início](#inicio)
             - [Madeira](#madeira)
@@ -68,7 +68,7 @@ def inspecao_concreto():
 
     col2.subheader("Tomografia acústica")
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.markdown("Este método é caracterizado pelo uso de um equipamento multi sensor com acelerômetros. Os acelerômetros são distribuídos ao redor do tronco, equidistantes e numa mesma altura ao longo da face lateral do tronco¹. O objetivo do ensaio é avaliar a qualidade da madeira no interior do fuste diferenciando entre regiões de madeira sã, com biodeterioração ou cavidades. Para isso, o ensaio baseia-se na propagação de ondas ultrassônicas no interior do tronco. Os múltiplos sensores distribuídos captam o sinal ultrassônico emitido por um acelerômetro impactado pelo martelo sônico e, com base no arranjo e na distribuição dos mesmos ao longo do tronco, determina-se a velocidade de propagação nas diferentes rotas que conectam o acelerômetro emissor aos receptores. Neste ensaio, é necessário que todos os acelerômetros sejam impactados para que a malha de difração tenha a maior quantidade de dados possível. A quantidade de acelerômetros utilizada varia de acordo com o diâmetro do tronco, mas na maior parte dos casos, 8 sensores oferecem análises representativas do estado do fuste.")
 
@@ -104,7 +104,7 @@ def inspecao_concreto():
 
     col2.markdown("##### Pacometria no ensaio de potencial de corrosão")
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("Neste ensaio a pacometria é fundamental por permitir aos operadores localizar áreas para a abertura de janelas de inspeção para fixar o eletrodo de trabalho.²")
 
@@ -132,7 +132,7 @@ def inspecao_concreto():
 
     col2.markdown("O primeiro deles, a fonte de radiação, se difere em ambos. Quando se utiliza raios X, a radiação é proveniente de um tubo de raios catódicos, enquanto que no de raios $\\gamma$ uma pastilha radioativa é responsável pelas emissões. A energia de radiação também se difere. No raio X a energia depende da corrente elétrica $i$ e na tensão $U$ aplicadas e dependem do material a ser ensaiado. Já com raios $\\gamma$, o principal fator associado à energia tem relação com a composição ou elemento constituinte da pastilha radioativa. Alguns elementos geram radiação de maior intensidade, com maior capacidade de penetrar materiais. A complexidade dos equipamentos depende do tipo de material ensaiado. No ensaio de raios X, quanto maior a espessura da amostra, mais robusta é a instalação e equipamentos envolvidos no ensaio.")
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.markdown("Quando se utiliza raios $\\gamma$, o aparato¹ não se altera da mesma forma, já que depende do elemento constituindo da pastilha radioativa para fornecer maior capacidade de penetração. O ensaio de raios X requer o uso de energia elétrica, enquanto o de raios $\\gamma$ não requer. Vale ressaltar que no primeiro, ao cessar o fornecimento de energia elétrica a radiação para de ser emitida. Já no ensaio por raios $\\gamma$, a radiação permanece sendo constantemente emitida, por conta disso, requer isolamento adequado dentro da fonte de radiação, por meio de metais pesados como o chumbo. No que diz respeito à espessura das amostras ensaiadas, o ensaio por raios $\\gamma$ é mais adequado por não exigir mudanças consideráveis no aparato quando comparado ao de raios X.")
 
@@ -146,13 +146,11 @@ def inspecao_concreto():
 
     col2.subheader("Ensaio de profundidade de carbonatação")
 
-    col1, col2, col3, col4 = st.columns([1, 1.4, 1.6, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.markdown("O ensaio de profundidade de carbonatação é imprescindível de ser realizado em estruturas de concreto. Baseado no indicador de fenolftaleína, ele permite diferenciar partes da estrutura que estão com $\\text{pH}>9$ por meio da coloração rosada presente no local. Entretanto, no caso da carbonatação, devido a tendência de redução no valor do pH, regiões carbonatadas tendem a ficar incolores pelo indicador. O fenômeno químico tratado, se não acompanhado e corrigido de forma correta, pode ocasionar sérios riscos à integridade do concreto e das armaduras em seu interior. Ele é caracterizado por não ser visível a olho nu, necessitando do teste indicado anteriormente por meio do indicador de fenolftaleína. No concreto, a presença de carbonatação tende a aumentar a dureza do concreto devido à característica rochosa do material, de modo que sua resistência à compressão tende a aumentar. Todavia, no que diz respeito ao aço das armaduras, ele apresenta um risco à integridade já que colabora para a despassivação das armaduras, aumentando a susceptibilidade do material à corrosão.")
 
     col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Reinforcement_corrosion.JPG/960px-Reinforcement_corrosion.JPG", caption="Corrosion of reinforcement in concrete, dgania b, israel")
-
-    col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.write("O processo de despassivação ocorre normalmente quando a frente de carbonatação está muito avançada, a ponto de ultrapassar a profundidade das armaduras. Para que a carbonatação ocorra, diferentes elos da cadeia de riscos à estrutura precisam ser ligados. A conexão dos elos depende desde as condições de dimensionamento quanto a utilização de materiais no projeto. Também é cabível citar as condições de confecção da estrutura e suas partes, tendo em vista a execução inadequada desses processos pode aumentar a quantidade de fragilidades na estrutura. A fragilidade é uma função que também depende do ambiente, ou seja, alguns ambientes podem ser mais agressivos ao concreto e degradá-lo com maior velocidade.")
 
@@ -206,11 +204,13 @@ def inspecao_concreto():
 
     col2.write("Outro aspecto importante deste ensaio relaciona-se com o preparo da área de ensaio. Os profissionais que o realizam devem se certificar da: correta limpeza e escarificação da superfície do concreto; evitar áreas com presença de armadura, tendo em vista a influência do aço que reduz a resistividade; áreas com carbonatação, já que esta eleva os valores de resistividade e leva os operadores a interpretações incorretas em relação a durabilidade das armaduras; locais com excesso de umidade e superfícies irregulares, com presença de emboço; entre outros fatores. Dessa forma, ensaios de profundidade de carbonatação e de detecção magnética das armaduras são fundamentais como requisitos pré-ensaio de resistividade.")
 
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
+
     col2.write("Tendo em vista a importância da correta interpretação dos dados de ensaio, pesquisadores elaboraram esta tabela mostrando como a avaliação da predisposição das armaduras à corrosão pode ser interpretada com base nos valores obtidos em diferentes condições: Estimativa da probabilidade de corrosão¹ e indicação da taxa de corrosão.²")
 
-    col2.info("¹A aferição deve ser feita na superfície do concreto evitando áreas com presença de armadura.")
+    col3.info("¹A aferição deve ser feita na superfície do concreto evitando áreas com presença de armadura.")
 
-    col2.info("²A aferição deve ser feita na superfície do concreto em áreas com presença de armadura, análogo ao método de potencial de corrosão.")
+    col3.info("²A aferição deve ser feita na superfície do concreto em áreas com presença de armadura, análogo ao método de potencial de corrosão.")
 
     data = [
         {"$\\rho (\\text{k}\\Omega\\,\\text{cm})$": "$\\rho\\geq 100$",      "Risco de corrosão": "🟢 Insignificante"},

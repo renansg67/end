@@ -10,11 +10,11 @@ def classificacao_madeira_estrutural_page():
 
     update_user_activity(user_email, user_role, 'classificação de madeira estrutural')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.title("Ensaios não destrutivos normatizados para a classificação da madeira estrutural")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Ensaios não destrutivos normatizados para a classificação da madeira estrutural]()
             - [Início](#inicio)
             - [Sobre os ensaios e a ABNT NBR 7190:2022](#sobre-os-ensaios-e-a-abnt-nbr-7190-2022)
@@ -25,15 +25,13 @@ def classificacao_madeira_estrutural_page():
                                                                      
     col2.header("Início")
 
-    col1, col2, col3, col4 = st.columns([1, 1, 2, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("Neste capítulo, conheceremos os principais ensaios não destrutivos normatizados para a classificação da madeira estrutural. Neste contexto, será considerado o que a ABNT NBR 7190 traz como fundamentos para a classificação. Esta norma passou recentemente por mudanças visando melhorias relacionadas a diversos contextos da utilização da madeira. Desde 1997 não eram trazidas mudanças ou atualizações da mesma, porém, após um período de mais de 20 anos, em 2022 a norma recebeu uma série de atualizações, sendo separada em 7 partes distintas:")
 
     col3.video("https://www.youtube.com/watch?v=X5dpNCvzTcI")
 
-    col1, col2, col3, col4 = st.columns([1, 1.8, 1, 1])
-
-    col3.markdown("""
+    col3.info("""
         - ABNT NBR 7190-2, Estruturas de madeira -- Parte 2: Métodos de ensaio para classificação visual e mecânica de peças estruturais de madeira
         - ABNT NBR 7190-3, Estruturas de madeira -- Parte 3: Métodos de ensaio para corpos de prova isentos de defeitos para madeiras de florestas nativas
         - ABNT NBR 7190-4, Estruturas de madeira -- Parte 4: Métodos de ensaio para caracterização de peças estruturais
@@ -53,9 +51,7 @@ def classificacao_madeira_estrutural_page():
             "Homogêneo" -> "ABNT NBR 7190-4"
             "Não homogêneo" -> "ABNT NBR 7190-2"
         }
-    ''')
-
-    col1, col2, col3 = st.columns([1, 3, 1])
+    ''', width="stretch")
 
     col2.header("Sobre os ensaios e a ABNT NBR 7190:2022")
 

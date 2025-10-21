@@ -11,13 +11,13 @@ def materiais_nao_metalicos_page():
 
     update_user_activity(user_email, user_role, 'materiais não metálicos')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.title("Ensaios não destrutivos para a caracterização de materiais de construção não metálicos")
 
-    col1.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Reciprocal_roof_structure%2C_the_Octagonal_Shelter%2C_Mags_Wood_in_Evanton_Community_Wood_%28geograph_6866216%29.jpg/960px-Reciprocal_roof_structure%2C_the_Octagonal_Shelter%2C_Mags_Wood_in_Evanton_Community_Wood_%28geograph_6866216%29.jpg", caption="Estrutura de Cobertura Recíproca ('Reciprocal Roof'), o Abrigo Octogonal em Mags Wood. **Crédito e Licença:** Julian Paren, via geograph.org.uk (CC BY-SA 2.0).")
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Reciprocal_roof_structure%2C_the_Octagonal_Shelter%2C_Mags_Wood_in_Evanton_Community_Wood_%28geograph_6866216%29.jpg/960px-Reciprocal_roof_structure%2C_the_Octagonal_Shelter%2C_Mags_Wood_in_Evanton_Community_Wood_%28geograph_6866216%29.jpg", caption="Estrutura de Cobertura Recíproca ('Reciprocal Roof'), o Abrigo Octogonal em Mags Wood. **Crédito e Licença:** Julian Paren, via geograph.org.uk (CC BY-SA 2.0).")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Início](#inicio)
         - [Concreto](#concreto)
             - [Ensaio para medição da dureza superficial](#ensaio-para-medicao-da-dureza-superficial)
@@ -40,6 +40,10 @@ def materiais_nao_metalicos_page():
                                                           
     col2.header("Início")
 
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
+
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/HD.6D.698_%2812365544204%29.jpg/960px-HD.6D.698_%2812365544204%29.jpg", caption="Um dispositivo de monitoramento revolucionário, capaz de detectar instantaneamente falhas em soldas, foi desenvolvido no Laboratório do Noroeste do Pacífico como parte do programa de pesquisa e desenvolvimento em ensaios não destrutivos da AEC. (c. 1970)")
+
     col2.write("Quando se fala de materiais de construção não metálicos, pode-se fazer referência tanto às estruturas de concreto quanto às de madeira, que são amplamente utilizadas. O objetivo da utilização de ensaios não destrutivos para a caracterização desses materiais, como tem se apresentado nas últimas décadas com o avanço do conhecimento e das técnicas da área, é complementar e facilitar as análises, além de permitir maior escalabilidade quanto às condições de resistência e rigidez do material ensaiado. Além disso, esse método visa complementar a caracterização realizada por meio de ensaios destrutivos, podendo encurtar o caminho até a caracterização destrutiva, desde que as propriedades da peça ensaiada sejam conhecidas e existam estudos anteriores detalhados o suficiente para validar o ensaio não destrutivo aplicado com boa margem de confiança. Dependendo do tipo de estudo, é possível até dispensar métodos destrutivos, que exigem mais tempo para execução.")
 
     col2.write("O concreto, apesar de possuir em seu interior material metálico proveniente das armaduras utilizadas para resistir aos esforços de tração, é avaliado por meio de ensaios específicos voltados às características do próprio concreto, sem considerar o efeito dessas armaduras. Isso permite avaliar a influência dos diversos elementos de sua composição, como cimento, agregados miúdos e graúdos, e o aglomerante (normalmente o cimento), possibilitando sua caracterização a partir de ensaios semidestrutivos e não destrutivos, utilizados para validar os processos de fabricação. Na primeira categoria enquadra-se o ensaio de penetração de pinos, enquanto a segunda contempla métodos como a esclerometria e a propagação de ondas de tensão, incluindo os procedimentos vibracionais e ultrassônicos. Para todos esses ensaios aplicados ao concreto, é sempre importante avaliar os fatores que podem influenciá-los. O material, quando exposto a intempéries em condições inadequadas, pode passar por processos de degradação. Neste capítulo serão abordados os principais fenômenos que podem ocorrer, bem como a importância de uma avaliação prévia das condições de ensaio, de modo a obter dados coerentes quanto às propriedades de resistência à compressão e de rigidez do material. Com base nessas análises e nas devidas considerações, é possível aprimorar tanto os ensaios realizados em laboratório com corpos de prova quanto aqueles conduzidos em estruturas reais. As principais normas brasileiras utilizadas nesta parte são: ABNT NBR 7584:2012, que trata do ensaio de medição da dureza superficial para o concreto endurecido, e ABNT NBR 8802:2019, referente ao ensaio de ultrassom.")
@@ -47,6 +51,11 @@ def materiais_nao_metalicos_page():
     col2.write("Comparada ao concreto, diversos métodos de ensaio análogos são utilizados para a madeira, com as devidas adaptações. Por se tratar de um material ortotrópico, ou seja, com propriedades elásticas distintas em três planos ortogonais de isotropia, a maior dificuldade está relacionada à elevada heterogeneidade apresentada pela madeira, que, ao compor estruturas vivas como as árvores, possui diversas particularidades que exigem atenção em sua caracterização. A utilização de ensaios não destrutivos, como o de propagação de ondas de tensão, tem ganhado cada vez mais espaço devido à correlação existente com as propriedades de resistência e rigidez. Além desse método, o ensaio de flexão estática normatizado pela ABNT NBR 7190:2022 estabelece o procedimento adequado para caracterizar a propriedade de rigidez, fornecendo aos profissionais da área a possibilidade de incorporar métodos vibracionais baseados no cálculo do módulo de elasticidade a partir da frequência fundamental de ressonância obtida por meio da análise de Fourier. Nesta parte serão detalhados os métodos de vibração transversal, em que uma barra biapoiada é posta em oscilação após sofrer uma deflexão inicial, e o dos modos de vibração, que permitem calcular propriedades como os módulos de elasticidade longitudinal e transversal a partir dos modos flexionais e torsionais.")
 
     col2.header(":factory: Concreto")
+
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
+
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Burden_Poured_Concrete_Bunker_01.jpg/960px-Burden_Poured_Concrete_Bunker_01.jpg", caption="Chris Burden – 'Pouren Concrete Bunker' (2003). Estação ferroviária de Deutschlandsberg, Estíria (Áustria).")
+    col3.image("https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Schmidt_hammer_testing.jpg/250px-Schmidt_hammer_testing.jpg", caption="Testando a resistência à compressão de um cubo de concreto usando um martelo de Schmidt, de forma incorreta. O martelo deveria ser mantido na posição horizontal para evitar o efeito da gravidade na leitura.")
 
     col2.page_link("https://www.youtube.com/watch?v=eFt-84qv7TU", label="Ensaios não destrutivos em estruturas em concreto – aplicação e métodos de ensaio", icon="🧱")
 
@@ -186,7 +195,7 @@ def materiais_nao_metalicos_page():
         \end{equation}
     ''')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("Módulo de elasticidade estático¹")
 
@@ -206,7 +215,7 @@ def materiais_nao_metalicos_page():
         \end{equation}
     ''')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("Fatores que afetam a velocidade de propagação do pulso ultrassônico no concreto²")
 
@@ -271,7 +280,7 @@ def materiais_nao_metalicos_page():
         \end{equation}
     ''')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("a partir do aparato experimental abaixo")
 

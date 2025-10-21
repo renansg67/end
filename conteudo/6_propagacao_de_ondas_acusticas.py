@@ -11,11 +11,11 @@ def propagacao_de_ondas_acusticas():
 
     update_user_activity(user_email, user_role, 'propagação de ondas acústicas em sólidos')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.title("Fatores que afetam a propagação de ondas acústicas em sólidos")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Fatores que afetam a propagação de ondas acústicas em sólidos](#fatores-que-afetam-a-propagacao-de-ondas-acusticas-em-solidos)
             - [Início](#inicio)
             - [Fatores relacionados aos fenômenos ondulatórios](#fatores-relacionados-aos-fenomenos-ondulatorios)

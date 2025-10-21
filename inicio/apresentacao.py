@@ -11,30 +11,27 @@ def apresentacao_page():
 
     update_user_activity(user_email, user_role, 'apresentação')
     
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.markdown("# 🔬 LabEND | Portal de Ensaios Não Destrutivos")
-    col2.markdown("## Onde a ciência encontra a segurança das estruturas")
-
-    col2.markdown("---")
 
     col2.header(f":rainbow[Olá,] :blue[{st.user.name.split(" ")[0]}]")
     col2.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg/960px-Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg")
 
-    with col1.expander("Ultrassom para inspeção de árvores", expanded=True):
+    with col3.expander("Ultrassom para inspeção de árvores", expanded=True):
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Abstract_pattern_on_a_tree_stump.jpg/330px-Abstract_pattern_on_a_tree_stump.jpg")
         if st.button("Saiba mais", key="us"):
             st.switch_page("./conteudo/4_inspecao_de_arvores.py")
 
-    with col1.expander("Carbonatação como ensaio complementar a outros ENDs", expanded=True):
+    with col3.expander("Carbonatação como ensaio complementar a outros ENDs", expanded=True):
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Betonkorrosion_unter_Autobahnbruecke_%2802%29.JPG/330px-Betonkorrosion_unter_Autobahnbruecke_%2802%29.JPG")
         if st.button("Saiba mais", key="carbonatacao"):
             st.switch_page("./conteudo/3_inspecao_de_estruturas_de_concreto_e_madeira.py")
 
-    with col1.expander("Termografia para inspeção de fachadas", expanded=True):
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Infrared_thermal_imaging_during_a_yacht_survey.jpg/500px-Infrared_thermal_imaging_during_a_yacht_survey.jpg")
-        if st.button("Saiba mais", key="termografia"):
-            st.switch_page("./conteudos/3_inspecao_de_estruturas_de_concreto_e_madeira.py")
+    #with col3.expander("Termografia para inspeção de fachadas", expanded=True):
+    #    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Infrared_thermal_imaging_during_a_yacht_survey.jpg/500px-Infrared_thermal_imaging_during_a_yacht_survey.jpg")
+    #    if st.button("Saiba mais", key="termografia"):
+    #        st.switch_page("./conteudos/3_inspecao_de_estruturas_de_concreto_e_madeira.py")
 
     with col3.expander("Ensaio de flexão estática conforme ABNT NBR 7190", expanded=True):
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Stacked_Timber_Displaying_Growth_Rings.jpg/330px-Stacked_Timber_Displaying_Growth_Rings.jpg")
@@ -43,7 +40,7 @@ def apresentacao_page():
             st.switch_page("./conteudo/2_classificacao_madeira_estrutural.py")
 
     with col3.expander("Livros e materiais para consulta", expanded=True):
-        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Christen_Dalsgaard_-_In_a_pine_wood._Study_-_Google_Art_Project.jpg/500px-Christen_Dalsgaard_-_In_a_pine_wood._Study_-_Google_Art_Project.jpg")
+        st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Christen_Dalsgaard_-_In_a_pine_wood._Study_-_Google_Art_Project.jpg/250px-Christen_Dalsgaard_-_In_a_pine_wood._Study_-_Google_Art_Project.jpg")
         if st.button("Saiba mais", key="intro"):
             st.switch_page("./biblioteca/introducao.py")
             

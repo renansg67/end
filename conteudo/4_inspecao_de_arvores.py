@@ -10,11 +10,11 @@ def inspecao_de_arvores():
 
     update_user_activity(user_email, user_role, 'inspeção de árvores')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.title("Ensaios não destrutivos para inspeção de árvores urbanas")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Ensaios não destrutivos para inspeção de árvores urbanas](#ensaios-nao-destrutivos-para-inspecao-de-arvores-urbanas)
             - [Inspeção técnica nível 3](#inspecao-tecnica-nivel-3)
                 - [Drone](#drone)
@@ -45,15 +45,16 @@ def inspecao_de_arvores():
     ▶️ [Assistir no YouTube](https://www.youtube.com/watch?v=fozt9dPI17o)
     """)
 
-    
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
+
     col2.write("Os principais ensaios não destrutivos para inspeção  de árvores urbanas estão em conformidade com a ABNT NBR 16246-3:2019. Ela trata da avaliação de risco das árvores urbanas trazendo especificando as práticas e equipamentos que devem ser utilizados em cada nível de inspeção.")
     col2.write("A inspeção técnica de nível 3 é a mais avançada entre todas as técnicas. Cabe aos técnicos e profissionais que a executam realizar a inspeção com técnicas de nível 2 visando ter uma panorama geral da árvore inspecionada. A de nível 2 consiste em etapas como: Inspeção em 360° ao redor da árvore visando identificar locais com fragilidades como ocos, fissuras, crescimento desordenado de fungos, perda de vitalidade, ataque de insetos xilófagos e galhos secos. Para isso, o profissional pode lançar mão de binóculos, trena florestal, clinômetro¹, hipsômetro² e trado de incremento³.")
 
-    col1.info("¹Dispositivo utilizado para a medição de ângulo, facilitando cálculos dendrométricos")
+    col3.info("¹Dispositivo utilizado para a medição de ângulo, facilitando cálculos dendrométricos")
 
-    col1.info("²Dispositivo utilizado para calcular a altura das árvores de forma direta. O princípio de funcionamento é análogo ao do clinômetro, porém no hipsômetro os cálculos são realizados e mostrados em seu visor agilizando as etapas de cálculo manual.")
+    col3.info("²Dispositivo utilizado para calcular a altura das árvores de forma direta. O princípio de funcionamento é análogo ao do clinômetro, porém no hipsômetro os cálculos são realizados e mostrados em seu visor agilizando as etapas de cálculo manual.")
 
-    col1.info("³Dispositivo manual normalmente utilizado para extrair amostras à altura do peito do operador, tendo em vista a necessidade de um posicionamento adequado para vencer a resistência do tronco durante o processo de extração das amostras cilíndricas} para extração de amostras do tronco. A utilização de martelo emborrachado para o ensaio de percussão pode ser feita objetivando encontrar locais com som cavo que possam indicar locais de fragilidade estrutural, seja por biodeterioração ou cavidades.")
+    col3.info("³Dispositivo manual normalmente utilizado para extrair amostras à altura do peito do operador, tendo em vista a necessidade de um posicionamento adequado para vencer a resistência do tronco durante o processo de extração das amostras cilíndricas} para extração de amostras do tronco. A utilização de martelo emborrachado para o ensaio de percussão pode ser feita objetivando encontrar locais com som cavo que possam indicar locais de fragilidade estrutural, seja por biodeterioração ou cavidades.")
 
     col2.header("Inspeção técnica nível 3")
 
@@ -61,9 +62,9 @@ def inspecao_de_arvores():
 
     col2.subheader("Drone")
 
-    col2.write("O uso de aeronaves remotamente pilotadas (RPA), popularmente conhecidas como drones¹, tem se tornado cada vez mais frequente em inspeções arbóreas de nível 3. Esse recurso permite a obtenção de imagens e vídeos em alta resolução da copa, do tronco e de regiões de difícil acesso, reduzindo a necessidade de trabalhos em altura e aumentando a segurança da equipe responsável pela inspeção.")
+    col2.write("O uso de aeronaves remotamente pilotadas (RPA), popularmente conhecidas como drones⁴, tem se tornado cada vez mais frequente em inspeções arbóreas de nível 3. Esse recurso permite a obtenção de imagens e vídeos em alta resolução da copa, do tronco e de regiões de difícil acesso, reduzindo a necessidade de trabalhos em altura e aumentando a segurança da equipe responsável pela inspeção.")
 
-    col3.info("¹Pode ser utilizado em locais de difícil acesso, quando as condições de escalada não forem adequadas para coletar dados em forma de imagens.")
+    col3.info("⁴Pode ser utilizado em locais de difícil acesso, quando as condições de escalada não forem adequadas para coletar dados em forma de imagens.")
 
     col2.write("A principal vantagem do drone está na possibilidade de realizar diagnósticos preliminares de forma rápida e não invasiva, abrangendo grandes áreas com menor custo e tempo de execução em comparação com métodos tradicionais. Por meio de sensores ópticos, câmeras de alta definição e, em alguns casos, câmeras multiespectrais ou termográficas, é possível identificar:")
 
@@ -81,19 +82,15 @@ def inspecao_de_arvores():
 
     col2.subheader("Trabalho em altura em árvores")
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("O trabalho em altura¹ aplicado à inspeção de árvores consiste no acesso direto à copa ou a pontos específicos do tronco e das ramificações, por meio de técnicas de escalada, plataformas elevatórias ou andaimes. Esse método possibilita a realização de ensaios não destrutivos e observações visuais em regiões que não podem ser alcançadas a partir do solo, garantindo maior abrangência na avaliação fitossanitária e estrutural da árvore.")
 
     col3.info("¹Qualquer trabalho realizado acima de 2 m de altura exige os requisitos de segurança previstos na NR35.")
 
-    col1, col2, col3, col4 = st.columns([1, 1, 2, 1])
-
     col2.write("As técnicas de escalada arbórea seguem princípios semelhantes aos utilizados em trabalhos verticais em edificações, sendo indispensável o uso de equipamentos de proteção individual (EPI) e de sistemas de ancoragem que garantam redundância e segurança. Os principais equipamentos incluem: capacete com jugular, cinturão tipo paraquedista, cordas dinâmicas ou semiestáticas, mosquetões com trava, talabartes e freios de descida. Para maior segurança, recomenda-se a utilização de dois pontos independentes de ancoragem durante a execução do procedimento.")
 
     col3.video("https://www.youtube.com/watch?v=CH2RBFUR5aA")
-
-    col1, col2, col3 = st.columns([1, 3, 1])
 
     col2.write("A legislação brasileira sobre segurança do trabalho em altura é regida pela NR-35, que estabelece requisitos mínimos e medidas de proteção. Embora voltada ao ambiente industrial e de construção civil, essa norma serve como referência também para trabalhos de inspeção em arborização urbana, devendo ser adaptada às especificidades do meio natural.")
 
@@ -122,9 +119,9 @@ def inspecao_de_arvores():
 
     col2.subheader("Tomografia")
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
-    col1.image(
+    col3.image(
         "https://upload.wikimedia.org/wikipedia/commons/b/bc/Badanie_drzewa_tomografem_akustycznym.jpg",
         caption=(
             "Tomografia acústica em árvore — imagem de Tomasz Majchrzak, "
@@ -190,8 +187,6 @@ def inspecao_de_arvores():
 
     col2.subheader("Hipsômetro")
 
-    col1, col2, col3, col4 = st.columns([1, 2, 1, 1])
-
     col2.write("O hipsômetro é um equipamento destinado à estimativa da altura de árvores, funcionando como uma evolução do clinômetro ao incorporar escalas ou sistemas digitais que facilitam os cálculos. O princípio de funcionamento baseia-se na medição de ângulos de visada entre a horizontal e pontos específicos da árvore, como a base e o topo, associados à distância entre o observador e o tronco. A partir desses dados, aplica-se a relação trigonométrica da tangente, permitindo determinar a altura total ou parcial da árvore.")
 
     col2.write("Os hipsômetros podem ser analógicos, com escalas graduadas que permitem leitura direta da altura, ou digitais, que utilizam sensores ópticos e a inserção prévia da distância horizontal para fornecer o resultado automaticamente. Em modelos mais avançados, o próprio equipamento pode medir a distância até a árvore por meio de telemetria a laser, aumentando a precisão das estimativas.")
@@ -206,7 +201,7 @@ def inspecao_de_arvores():
         - acompanhamento do crescimento de árvores em estudos de monitoramento florestal ou urbano.
     """)
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("Apesar de suas vantagens, a utilização do hipsômetro requer atenção a alguns fatores que podem comprometer a precisão da medição, como a visibilidade do topo da árvore, a presença de copas densas que dificultem a definição do ponto de referência e a correta calibração do equipamento. Assim como no clinômetro, recomenda-se realizar as medições a partir de diferentes pontos de observação para reduzir incertezas.")
 
@@ -216,7 +211,7 @@ def inspecao_de_arvores():
 
     col2.subheader("Trado de incremento")
 
-    col1, col2, col3, col4 = st.columns([1, 1.5, 1.5, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("O trado de incremento é um equipamento amplamente utilizado em inspeções arbóreas para a coleta de amostras cilíndricas do lenho, permitindo a análise direta das características anatômicas e mecânicas da madeira. O instrumento consiste em uma broca oca de pequeno diâmetro, acoplada a uma manivela, que é introduzida no tronco em profundidade suficiente para retirar um cilindro da madeira interna, denominado testemunho.")
 
@@ -236,8 +231,6 @@ def inspecao_de_arvores():
     - a densidade e a qualidade estrutural da madeira, que podem ser correlacionadas a propriedades mecânicas de resistência e rigidez.
     """)
 
-    col1, col2, col3 = st.columns([1, 3, 1])
-
     col2.write("Apesar de ser considerado um método minimamente invasivo, o uso do trado de incremento gera perfurações que podem se tornar pontos de entrada para fungos e pragas. Por esse motivo, deve-se limitar o número de coletas em uma mesma árvore, evitando repetições desnecessárias, além de aplicar práticas de assepsia no equipamento e nas áreas de perfuração. Em alguns casos, recomenda-se o uso de selantes ou pastas cicatrizantes para reduzir os riscos de infecção.")
 
     col2.write("O procedimento exige que a broca seja posicionada em ângulo ortogonal à superfície do tronco e introduzida até atingir o centro geométrico ou até a profundidade necessária para a coleta representativa. Após a retirada do testemunho, este deve ser devidamente acondicionado e identificado para análise laboratorial.")
@@ -250,15 +243,13 @@ def inspecao_de_arvores():
 
     col2.subheader("Câmeras termográficas")
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.write("O uso de câmeras termográficas em inspeções arbóreas representa um avanço significativo na detecção de anomalias internas e na avaliação do estado fitossanitário das árvores. Essas câmeras captam a radiação infravermelha emitida pela superfície, transformando-a em imagens que revelam variações de temperatura invisíveis a olho nu. Pequenas diferenças térmicas podem indicar a presença de cavidades, zonas de apodrecimento, infiltração de umidade ou até ataques de fungos e insetos que alteram o equilíbrio térmico do tronco.")
 
-    col1.image("https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Infrared_thermal_imaging_during_a_yacht_survey.jpg/500px-Infrared_thermal_imaging_during_a_yacht_survey.jpg", caption="FLIR E50 - Câmera Termográfica (CC BY-SA 4.0)")
-
-    col1.markdown(
-        "Imagem: [FLIR E50 - Câmera Termográfica](https://commons.wikimedia.org/wiki/File:Infrared_thermal_imaging_during_a_yacht_survey.jpg) por Suenosazules, disponível em Wikimedia Commons, licenciada sob [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).",
-        unsafe_allow_html=True
+    col3.image(
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Infrared_thermal_imaging_during_a_yacht_survey.jpg/250px-Infrared_thermal_imaging_during_a_yacht_survey.jpg", 
+        caption="FLIR E50 - Câmera Termográfica (CC BY-SA 4.0)"
     )
 
     col2.write("Uma das principais vantagens da termografia é o caráter totalmente não invasivo: não há necessidade de perfurações ou cortes para acessar informações do interior da madeira. Além disso, o método possibilita a inspeção em tempo real, permitindo ao técnico observar, durante o próprio levantamento de campo, regiões suspeitas que merecem avaliação complementar. Por essa razão, a termografia tem sido utilizada não apenas em árvores isoladas, mas também em inventários arbóreos urbanos de grande escala, onde a agilidade na coleta de dados é fundamental.")
