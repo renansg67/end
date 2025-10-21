@@ -12,10 +12,10 @@ def matriz_de_rigidez_page():
 
     update_user_activity(user_email, user_role, 'matriz de rigidez')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
     col2.title("Bases teóricas para obtenção da matriz de rigidez por método de propagação de ondas")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Bases teóricas para obtenção da matriz de rigidez por método de propagação de ondas](#bases-teoricas-para-obtencao-da-matriz-de-rigidez-por-metodo-de-propagacao-de-ondas)
             - [Início](#inicio)
             - [Materiais isotrópicos](#materiais-isotropicos)

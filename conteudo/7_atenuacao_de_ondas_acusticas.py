@@ -10,11 +10,11 @@ def atenuacao_de_ondas_acusticas():
 
     update_user_activity(user_email, user_role, 'atenuação de ondas acústicas')
 
-    col1, col2, col3 = st.columns([1, 3, 1])
+    col1, col2, col3 = st.columns([.25, 3, 1.5])
 
     col2.title("Atenuação de ondas acústicas em sólidos")
 
-    col2.expander(":material/book: Sumário", expanded=False).markdown('''
+    col2.expander(":material/book: Sumário", expanded=True).markdown('''
         - [Atenuação de ondas acústicas em sólidos](#atenuacao-de-ondas-acusticas-em-solidos)
             - [Início](#inicio)
             - [Principais fatores relacionados à atenuação](#fatores-principais-relacionados-a-atenuacao)

@@ -14,29 +14,29 @@ create_tables()
 
 pages = {
     "Início": [
-        st.Page("./inicio/apresentacao.py", title="Página Inicial", icon="✈️")
+        st.Page("./inicio/apresentacao.py", title="Página Inicial", icon=":material/flight_land:")
     ],
     "Conteúdo": [
-        st.Page("./conteudo/1_materiais_nao_metalicos.py", title="Materiais de Construção não Metálicos", icon="🧱"),
-        st.Page("./conteudo/2_classificacao_madeira_estrutural.py", title="Classificação de Madeira Estrutural", icon="🪵"),
-        st.Page("./conteudo/3_inspecao_de_estruturas_de_concreto_e_madeira.py", title="Inspeção de Estruturas (Concreto e Madeira)", icon="🪨"),
-        st.Page("./conteudo/4_inspecao_de_arvores.py", title="Inspeção de Árvores", icon="🌳"),
-        st.Page("./conteudo/5_matriz_de_rigidez.py", title="Matriz de Rigidez", icon="📚"),
+        st.Page("./conteudo/1_materiais_nao_metalicos.py", title="Materiais de Construção não Metálicos", icon=":material/polymer:"),
+        st.Page("./conteudo/2_classificacao_madeira_estrutural.py", title="Classificação de Madeira Estrutural", icon=":material/carpenter:"),
+        st.Page("./conteudo/3_inspecao_de_estruturas_de_concreto_e_madeira.py", title="Inspeção de Estruturas (Concreto e Madeira)", icon=":material/cabin:"),
+        st.Page("./conteudo/4_inspecao_de_arvores.py", title="Inspeção de Árvores", icon=":material/forest:"),
+        st.Page("./conteudo/5_matriz_de_rigidez.py", title="Matriz de Rigidez", icon=":material/background_grid_small:"),
         st.Page("./conteudo/6_propagacao_de_ondas_acusticas.py", title="Propagação de Ondas Acústicas", icon=":material/waves:"),
-        st.Page("./conteudo/7_atenuacao_de_ondas_acusticas.py", title="Atenuação de Ondas Acústicas", icon="🔊")
+        st.Page("./conteudo/7_atenuacao_de_ondas_acusticas.py", title="Atenuação de Ondas Acústicas", icon=":material/cadence:")
     ],
     "Equipamentos": [
-        st.Page("./equipamentos/equipamentos.py", title="Equipamentos", icon="🛠")
+        st.Page("./equipamentos/equipamentos.py", title="Equipamentos", icon=":material/build:")
     ],
     "Biblioteca": [
-        st.Page("./biblioteca/introducao.py", title="Introdução", icon="👋"),
-        st.Page("./biblioteca/biblioteca.py", title="Biblioteca", icon="📚")
+        st.Page("./biblioteca/introducao.py", title="Introdução", icon=":material/waving_hand:"),
+        st.Page("./biblioteca/biblioteca.py", title="Biblioteca", icon=":material/book_5:")
     ],
     "Empréstimos": [
-        st.Page("./emprestimos/emprestimos.py", title="Formulário", icon="ℹ️")
+        st.Page("./emprestimos/emprestimos.py", title="Formulário", icon=":material/assignment:")
     ],
     "Monitor": [
-        st.Page("./monitor/monitor.py", title="Monitor", icon=":material/thumb_up:")
+        st.Page("./monitor/monitor.py", title="Monitor", icon=":material/query_stats:")
     ]
 }
 
@@ -82,8 +82,15 @@ if user_email:
     # Puxa o role e o email do state
     user_role = st.session_state['user_role']
     
+    col1.header(f":rainbow[Olá, {st.user.given_name}]")
+    col1.write(f"Logado com: {st.user.email}")
+
+    url_imagem_drive = "https://images.seeklogo.com/logo-png/14/1/unicamp-logo-png_seeklogo-144966.png"
+
+    with col2.container(width='stretch', horizontal_alignment='center'):
+        st.image(url_imagem_drive, width=150)
     # Componentes de UI ÚNICOS: Logout
-    if col3.button("Logout :material/logout:", type="secondary", key="main_logout_button"):
+    if col3.container(horizontal_alignment='right').button("Logout :material/logout:", type="primary", key="main_logout_button"):
         st.session_state.clear() 
         st.logout() 
         st.rerun()
@@ -113,7 +120,7 @@ else:
         st.session_state.clear()
         
     # Botão de Login
-    if col3.button("Login :material/login:", type="secondary", key="main_login_button"):
+    if col3.container(horizontal_alignment='right').button("Login :material/login:", type="primary", key="main_login_button"):
         st.login()
     
     col2.markdown("""

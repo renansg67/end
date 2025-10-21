@@ -13,9 +13,8 @@ def display_themed_intro():
     """Exibe o cabeçalho temático e o vídeo."""
     col1, col2, col3, col4 = st.columns([1, 2.5, 2.5, 1])
     # Saudação personalizada
-    username = st.user.name.split(" ")[0]
     
-    col2.markdown(f"## 🔭 Seja Bem-vindo(a) à Biblioteca Cósmica, {username}! ✨")
+    col2.markdown(f"## 🔭 Seja Bem-vindo(a) à Biblioteca, {st.user.given_name}! ✨")
     
     col3.video(CARL_SAGAN_VIDEO_URL)
 

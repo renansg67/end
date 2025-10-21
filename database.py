@@ -75,7 +75,8 @@ def get_connection():
             port=os.getenv("DB_PORT"),
             database=os.getenv("POSTGRES_DB"),
             username=os.getenv("POSTGRES_USER"),
-            password=os.getenv("POSTGRES_PASSWORD")
+            password=os.getenv("POSTGRES_PASSWORD"),
+            connect_args={"connect_timeout": 40}
         )
     except Exception as e:
         st.error(f"Erro ao inicializar st.connection. Verifique as variáveis de ambiente. Erro: {e}")
