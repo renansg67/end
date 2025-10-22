@@ -15,7 +15,7 @@ def apresentacao_page():
 
     col2.markdown("# 🧱 LabEND | Portal de Ensaios Não Destrutivos")
 
-<<<<<<< HEAD
+
     #col2.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg/960px-Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg")
 
     col2.markdown("""
@@ -42,10 +42,7 @@ def apresentacao_page():
 
         🧩 **Dica:** Explore o menu superior para navegar entre os diferentes tipos de ensaios e descobrir exemplos, imagens e explicações detalhadas sobre cada técnica.
     """)
-=======
-    col2.image("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg/960px-Guernica_reproduction_on_tiled_wall%2C_Guernica%2C_Spain_%28PPL3-Altered%29_julesvernex2.jpg")
->>>>>>> 5219e1f521a59c17265b196e9690f19407bca9d1
-
+    
     with col3.expander("Ultrassom para inspeção de árvores", expanded=True):
         st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Abstract_pattern_on_a_tree_stump.jpg/330px-Abstract_pattern_on_a_tree_stump.jpg")
         if st.button("Saiba mais :material/search:", key="us"):
